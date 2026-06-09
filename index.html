@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="wood-panel h-screen max-h-[100dvh] w-full flex flex-col justify-center items-center py-1 px-4 font-serif text-[#F6E7C1] relative overflow-hidden select-none">
+    <div class="wood-panel min-h-screen md:h-screen md:max-h-[100dvh] w-full flex flex-col justify-center items-center py-2 px-2 sm:px-4 font-serif text-[#F6E7C1] relative overflow-y-auto md:overflow-hidden select-none">
       
       <!-- Steampunk Corner Rivets -->
       <div class="rivet top-3 left-3 md:top-5 md:left-5"></div>
@@ -97,7 +97,7 @@
         </div>
 
         <!-- Central Decorative Cabinet Booth Frame -->
-        <div class="relative bg-[#2e1215] border-8 border-[#180709] p-8 rounded-3xl w-full max-w-7xl lg:max-w-[85rem] shadow-[0_35px_100px_rgba(0,0,0,1)] text-center overflow-hidden flex flex-col"
+        <div class="relative bg-[#2e1215] border-4 sm:border-8 border-[#180709] p-3 sm:p-6 md:p-8 rounded-2xl md:rounded-3xl w-full max-w-2xl shadow-[0_35px_100px_rgba(0,0,0,1)] text-center overflow-hidden flex flex-col"
              style="box-shadow: inset 0 0 70px rgba(0,0,0,0.95), 0px 15px 50px rgba(0,0,0,0.85);
                     background-image: radial-gradient(circle at center, rgba(163,20,32,0.18) 0%, rgba(0,0,0,0.7) 100%),
                                       repeating-linear-gradient(90deg, rgba(93,4,12,0.1) 0px, rgba(93,4,12,0.1) 40px, rgba(29,3,7,0.2) 40px, rgba(29,3,7,0.2) 80px);
@@ -217,9 +217,9 @@
       </div>
 
       <!-- MAIN STEAM CONSOLE DASHBOARD -->
-      <div class="flex flex-col xl:flex-row items-center justify-center gap-4 w-full max-w-[1440px] lg:max-w-none h-full max-h-[98.5dvh] z-10 p-1 md:p-2 overflow-hidden">
+      <div class="flex flex-col xl:flex-row items-center justify-center gap-4 w-full max-w-[1440px] lg:max-w-none h-auto md:h-full md:max-h-[98.5dvh] z-10 p-1 md:p-2 overflow-y-auto md:overflow-hidden">
         
-        <div class="main-console-wrapper w-full max-w-[1440px] lg:max-w-all flex flex-col pt-0.5 h-full max-h-[97vh] overflow-hidden relative">
+        <div class="main-console-wrapper w-full max-w-[1440px] flex flex-col pt-0.5 min-h-[550px] md:h-full md:max-h-[97vh] md:overflow-hidden relative">
           <!-- Marquee Lights Header chain -->
           <div class="flex justify-between w-full h-3.5 bg-black/60 px-2 overflow-hidden flex-shrink-0 z-10">
             <div class="bulb bulb-red w-2.5 h-2.5 rounded-full mt-0.5"></div>
@@ -311,7 +311,7 @@
           <div class="console-grid w-full flex-1 min-h-0 flex flex-col items-stretch justify-center relative overflow-hidden select-none">
             
             <!-- CENTER WORKSPACE VIEWPORTS -->
-            <main class="console-body min-h-0 bg-[#070102] relative p-4 flex flex-col items-center justify-center overflow-y-auto w-full">
+            <main class="console-body min-h-0 bg-[#070102] relative p-1.5 sm:p-4 flex flex-col items-center justify-center overflow-y-auto w-full">
               <!-- Grid Background panel frame rivets -->
               <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_40%,rgba(0,0,0,0.92)_100%)] pointer-events-none z-10"></div>
               <div class="crt-lines"></div>
@@ -587,10 +587,10 @@
                     </div>
 
                     <!-- Bento-styled grid of modules -->
-                    <div class="menu-grid grid grid-cols-1 md:grid-cols-2 gap-5 max-w-3xl mx-auto">
+                    <div class="menu-grid grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
                       
                       <!-- Card 1 -->
-                      <button class="menu-item-card-btn menu-btn p-4 relative flex flex-col items-center justify-between text-center min-h-[175px] select-none cursor-pointer group hover:border-[#FFD84D]" data-screen-id="invention">
+                      <button class="menu-item-card-btn menu-btn p-3 sm:p-4 relative flex flex-col items-center justify-between text-center min-h-[140px] sm:min-h-[175px] select-none cursor-pointer group hover:border-[#FFD84D]" data-screen-id="invention">
                         <div class="plate-rivet-corner c-tl scale-75"></div><div class="plate-rivet-corner c-tr scale-75"></div><div class="plate-rivet-corner c-bl scale-75"></div><div class="plate-rivet-corner c-br scale-75"></div>
                         <div class="text-3xl text-amber-300 mb-2">👁️</div>
                         <h4 class="font-display text-sm sm:text-base text-[#FFD84D] uppercase tracking-wide leading-tight mb-2 font-bold">1. Analyseur d’Objets</h4>
@@ -598,7 +598,7 @@
                       </button>
 
                       <!-- Card 2 -->
-                      <button class="menu-item-card-btn menu-btn p-4 relative flex flex-col items-center justify-between text-center min-h-[175px] select-none cursor-pointer group hover:border-[#FF2E9A]" data-screen-id="patent">
+                      <button class="menu-item-card-btn menu-btn p-3 sm:p-4 relative flex flex-col items-center justify-between text-center min-h-[140px] sm:min-h-[175px] select-none cursor-pointer group hover:border-[#FF2E9A]" data-screen-id="patent">
                         <div class="plate-rivet-corner c-tl scale-75"></div><div class="plate-rivet-corner c-tr scale-75"></div><div class="plate-rivet-corner c-bl scale-75"></div><div class="plate-rivet-corner c-br scale-75"></div>
                         <div class="text-3xl text-[#FF2E9A] mb-2">📜</div>
                         <h4 class="font-display text-sm sm:text-base text-[#FFD84D] uppercase tracking-wide leading-tight mb-2 font-bold">2. Générateur de Brevets</h4>
@@ -606,7 +606,7 @@
                       </button>
 
                       <!-- Card 3 -->
-                      <button class="menu-item-card-btn menu-btn p-4 relative flex flex-col items-center justify-between text-center min-h-[175px] select-none cursor-pointer group hover:border-[#14D8D8]" data-screen-id="translator">
+                      <button class="menu-item-card-btn menu-btn p-3 sm:p-4 relative flex flex-col items-center justify-between text-center min-h-[140px] sm:min-h-[175px] select-none cursor-pointer group hover:border-[#14D8D8]" data-screen-id="translator">
                         <div class="plate-rivet-corner c-tl scale-75"></div><div class="plate-rivet-corner c-tr scale-75"></div><div class="plate-rivet-corner c-bl scale-75"></div><div class="plate-rivet-corner c-br scale-75"></div>
                         <div class="text-3xl text-[#14D8D8] mb-2">🔊</div>
                         <h4 class="font-display text-sm sm:text-base text-[#FFD84D] uppercase tracking-wide leading-tight mb-2 font-bold">3. Traducteur Bavard</h4>
@@ -614,7 +614,7 @@
                       </button>
 
                       <!-- Card 4 -->
-                      <button class="menu-item-card-btn menu-btn p-4 relative flex flex-col items-center justify-between text-center min-h-[175px] select-none cursor-pointer group hover:border-[#19C37D]" data-screen-id="collection">
+                      <button class="menu-item-card-btn menu-btn p-3 sm:p-4 relative flex flex-col items-center justify-between text-center min-h-[140px] sm:min-h-[175px] select-none cursor-pointer group hover:border-[#19C37D]" data-screen-id="collection">
                         <div class="plate-rivet-corner c-tl scale-75"></div><div class="plate-rivet-corner c-tr scale-75"></div><div class="plate-rivet-corner c-bl scale-75"></div><div class="plate-rivet-corner c-br scale-75"></div>
                         <div class="text-3xl text-[#19C37D] mb-2">📦</div>
                         <h4 class="font-display text-sm sm:text-base text-[#FFD84D] uppercase tracking-wide leading-tight mb-2 font-bold">4. Bureau de Classification</h4>

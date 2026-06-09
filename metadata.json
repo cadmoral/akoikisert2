@@ -1,0 +1,8 @@
+{
+  "name": "La Chambre des Objets Bavards",
+  "description": "Borne muséale magique, foraine et pseudo-scientifique. Toute curiosité sera examinée avec le plus grand sérieux absurde.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

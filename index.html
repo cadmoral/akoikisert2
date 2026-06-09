@@ -110,38 +110,66 @@
           </div>
 
           <div class="mt-6 text-center select-none">
-            <div class="text-[0.7rem] font-rye tracking-[0.4em] text-[#FFD84D] uppercase mb-2 bulb-vintage-glow">
+            <div class="text-xs sm:text-sm font-rye tracking-[0.4em] text-[#FFD84D] uppercase mb-2 bulb-vintage-glow">
               ✦ CABINET D'ART AUTOMATIQUE ET DE DIVINATION ✦
             </div>
-            <h2 class="main-title text-5xl md:text-6xl text-center uppercase tracking-widest my-4" style="font-family: 'Sancreek', cursive; text-shadow: 0 4px 10px rgba(0,0,0,0.9);">
+            <h2 class="main-title text-3xl sm:text-5xl md:text-6xl text-center uppercase tracking-widest my-4 px-2" style="font-family: 'Sancreek', cursive; text-shadow: 0 4px 10px rgba(0,0,0,0.9);">
               ENTRÉE DU CABINET
             </h2>
-            <div class="w-80 h-1 bg-[radial-gradient(circle_at_center,#FFD84D_0%,transparent_100%)] mx-auto my-4 opacity-50"></div>
+            <div class="w-full max-w-xs h-1 bg-[radial-gradient(circle_at_center,#FFD84D_0%,transparent_100%)] mx-auto my-4 opacity-50"></div>
           </div>
 
-          <!-- Booth elements layout - Single imposing brass-accented control board -->
-          <div class="flex justify-center items-center my-6 relative min-h-[360px] w-full">
-            <div class="bg-[#140406] border-4 border-[#180709] p-8 md:p-10 rounded-2xl relative flex flex-col items-center justify-center min-h-[380px] shadow-[inset_0_0_40px_rgba(0,0,0,0.95)] overflow-hidden w-full max-w-2xl mx-auto">
+          <!-- Booth elements layout - Centered single-column layout -->
+          <div class="my-6 relative w-full max-w-xl mx-auto text-left">
+            
+            <!-- Centered Access Console and Jeton interaction with beautiful Victorian-Steampunk ornaments -->
+            <div class="bg-[#140406] border-4 border-[#331114] p-6 md:p-8 rounded-2xl relative flex flex-col items-center justify-center min-h-[380px] shadow-[0_20px_50px_rgba(0,0,0,0.95),inset_0_0_40px_rgba(0,0,0,0.95)] overflow-hidden">
+               
+              <!-- Victorian Golden Ornaments in corners -->
+              <div class="absolute top-2 left-2 w-4 h-4 border-t-2 border-l-2 border-[#D4A017] opacity-60"></div>
+              <div class="absolute top-2 right-2 w-4 h-4 border-t-2 border-r-2 border-[#D4A017] opacity-60"></div>
+              <div class="absolute bottom-2 left-2 w-4 h-4 border-b-2 border-l-2 border-[#D4A017] opacity-60"></div>
+              <div class="absolute bottom-2 right-2 w-4 h-4 border-b-2 border-r-2 border-[#D4A017] opacity-60"></div>
+
+              <!-- Top Rivet panel edge -->
+              <div class="absolute inset-x-0 top-0 h-4.5 bg-[#2c0e11] border-b border-[#4d161a] flex justify-between items-center px-4">
+                <span class="w-1.5 h-1.5 bg-[#FFD84D]/60 rounded-full shadow-[0_0_5px_#FFD84D]"></span>
+                <span class="font-mono text-xs text-[#FFD84D]/85 uppercase tracking-[2px]">CORPS DU MÉCANISME DE COMMANDE</span>
+                <span class="w-1.5 h-1.5 bg-[#FFD84D]/60 rounded-full shadow-[0_0_5px_#FFD84D]"></span>
+              </div>
+
+              <!-- Subtle background rotating gears decor inside container -->
+              <div class="absolute -top-10 -left-10 w-24 h-24 text-[#D4A017]/5 pointer-events-none animate-[spin_12s_linear_infinite]">
+                <svg viewBox="0 0 100 100" class="w-full h-full fill-current">
+                  <path d="M50 35c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15zm0 24c-5 0-9-4-9-9s4-9 9-9 9 4 9 9-4 9-9 9zm2-29.8V4.8h-4v4.4C44 9.6 40 11.2 37 13.5l-3.1-3.1-2.8 2.8 3.1 3.1C32 19 30.2 22.1 29.5 25.6H25h-4v4h4.4c.4 4.3 2 8.3 4.3 11.3l-3.2 3.2 2.8 2.8 3.2-3.2c3 2.3 7 3.9 11.3 4.3v4.4h4v-4.4c4.3-.4 8.3-2 11.3-4.3l3.2 3.2 2.8-2.8-3.2-3.2c2.3-3 3.9-7 4.3-11.3h4.4v-4h-4.4c-.4-4.3-2-8.3-4.3-11.3l3.2-3.2-2.8-2.8-3.2 3.2C68 12.1 64 10.5 59.7 10.1v-4.4h-4v4.4" />
+                </svg>
+              </div>
+              <div class="absolute -bottom-12 -right-12 w-32 h-32 text-[#D4A017]/5 pointer-events-none animate-[spin_20s_linear_infinite_reverse]">
+                <svg viewBox="0 0 100 100" class="w-full h-full fill-current">
+                  <path d="M50 35c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15zm0 24c-5 0-9-4-9-9s4-9 9-9 9 4 9 9-4 9-9 9zm2-29.8V4.8h-4v4.4C44 9.6 40 11.2 37 13.5l-3.1-3.1-2.8 2.8 3.1 3.1C32 19 30.2 22.1 29.5 25.6H25h-4v4h4.4c.4 4.3 2 8.3 4.3 11.3l-3.2 3.2 2.8 2.8 3.2-3.2c3 2.3 7 3.9 11.3 4.3v4.4h4v-4.4c4.3-.4 8.3-2 11.3-4.3l3.2 3.2 2.8-2.8-3.2-3.2c2.3-3 3.9-7 4.3-11.3h4.4v-4h-4.4c-.4-4.3-2-8.3-4.3-11.3l3.2-3.2-2.8-2.8-3.2 3.2C68 12.1 64 10.5 59.7 10.1v-4.4h-4v4.4" />
+                </svg>
+              </div>
+
               <!-- Decorative interior borders -->
               <div class="absolute top-2.5 w-11/12 border-b border-[#FBECD2]/15 border-dashed"></div>
               <div class="absolute bottom-2.5 w-11/12 border-t border-[#FBECD2]/15 border-dashed"></div>
               
-              <div class="text-[0.85rem] font-circus tracking-[0.2em] text-[#FFD84D] uppercase mb-4 text-center">
-                COMMANDE PRINCIPALE : ENTRÉE DU JETON D'ACCÈS
+              <div class="text-[#FFD84D] uppercase mb-3 text-center mt-4 text-sm md:text-base font-circus tracking-[0.15em]">
+                COMMANDE PRINCIPALE : ACCÈS AU CABINET
               </div>
 
-              <p class="text-stone-300 text-xs font-serif italic text-center max-w-lg mb-6 leading-relaxed">
-                Veuillez déposer le jeton officiel du Cabinet ci-dessous pour déverrouiller la machinerie des modules et lancer les analyses de la Chambre des Objets Bavards.
+              <p class="text-stone-300 text-xs sm:text-sm font-serif italic text-center max-w-lg mb-5 leading-relaxed px-4">
+                Glissez un jeton officiel de transit temporel dans la fente ci-dessous puis déposez-le pour activer les modules.
               </p>
 
               <!-- Brass Insert Plate -->
-              <div class="relative w-64 h-24 bg-gradient-to-br from-[#E5A93B] via-[#946210] to-[#5C3C05] p-1 rounded-sm shadow-[0_12px_24px_rgba(0,0,0,0.9)] mb-8 flex items-center justify-center border-2 border-[#3d1a04]">
-                <div class="absolute top-1 left-1 w-2.5 h-2.5 rounded-full bg-[#1e0d02] border border-[#ffea9f]/40 flex items-center justify-center"><div class="w-1.5 h-[1px] bg-[#ffea9f]/50 rotate-45"></div></div>
-                <div class="absolute top-1 right-1 w-2.5 h-2.5 rounded-full bg-[#1e0d02] border border-[#ffea9f]/40 flex items-center justify-center"><div class="w-1.5 h-[1px] bg-[#ffea9f]/50 -rotate-45"></div></div>
-                <div class="absolute bottom-1 left-1 w-2.5 h-2.5 rounded-full bg-[#1e0d02] border border-[#ffea9f]/40 flex items-center justify-center"><div class="w-1.5 h-[1px] bg-[#ffea9f]/50 -rotate-45"></div></div>
-                <div class="absolute bottom-1 right-1 w-2.5 h-2.5 rounded-full bg-[#1e0d02] border border-[#ffea9f]/40 flex items-center justify-center"><div class="w-1.5 h-[1px] bg-[#ffea9f]/50 rotate-45"></div></div>
+              <div class="relative w-56 md:w-64 h-20 md:h-24 bg-gradient-to-br from-[#E5A93B] via-[#946210] to-[#5C3C05] p-1 rounded-sm shadow-[0_12px_24px_rgba(0,0,0,0.9)] mb-6 md:mb-8 flex items-center justify-center border-2 border-[#3d1a04]">
+                <div class="absolute top-1 left-1 w-2 h-2 rounded-full bg-[#1e0d02] border border-[#ffea9f]/40 flex items-center justify-center"><div class="w-1 h-[1px] bg-[#ffea9f]/50 rotate-45"></div></div>
+                <div class="absolute top-1 right-1 w-2 h-2 rounded-full bg-[#1e0d02] border border-[#ffea9f]/40 flex items-center justify-center"><div class="w-1 h-[1px] bg-[#ffea9f]/50 -rotate-45"></div></div>
+                <div class="absolute bottom-1 left-1 w-2 h-2 rounded-full bg-[#1e0d02] border border-[#ffea9f]/40 flex items-center justify-center"><div class="w-1 h-[1px] bg-[#ffea9f]/50 -rotate-45"></div></div>
+                <div class="absolute bottom-1 right-1 w-2 h-2 rounded-full bg-[#1e0d02] border border-[#ffea9f]/40 flex items-center justify-center"><div class="w-1 h-[1px] bg-[#ffea9f]/50 rotate-45"></div></div>
                 
-                <div class="w-5 h-16 bg-black rounded border-2 border-[#3c2203] flex items-center justify-center shadow-[inset_0_5px_15px_black] overflow-hidden relative">
+                <div class="w-5 h-12 md:h-16 bg-black rounded border-2 border-[#3c2203] flex items-center justify-center shadow-[inset_0_5px_15px_black] overflow-hidden relative">
                   <!-- Sliding scanning laser light -->
                   <div class="absolute inset-x-0 h-1 bg-[#FFD84D] shadow-[0_0_10px_4px_#FFD84D] opacity-90" style="animation: scan-up-down 2.2s infinite ease-in-out;"></div>
                 </div>
@@ -149,26 +177,26 @@
 
               <!-- Interactive Gold Coin -->
               <div id="interactive-gold-coin" class="cursor-pointer transition-all duration-700 hover:scale-[1.12] select-none pb-2 flex flex-col items-center gap-2" title="Cliquez pour déposer le jeton dans la fente">
-                <div class="w-28 h-28 rounded-full border-4 border-double border-[#800d14] flex flex-col items-center justify-center relative shadow-[0_15px_30px_rgba(0,0,0,0.955)] hover:shadow-[0_20px_45px_rgba(255,216,77,0.5)]"
+                <div class="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-double border-[#800d14] flex flex-col items-center justify-center relative shadow-[0_15px_30px_rgba(0,0,0,0.955)] hover:shadow-[0_20px_45px_rgba(255,216,77,0.5)]"
                      style="background-image: radial-gradient(circle, #FFF4D0 0%, #D4A017 65%, #8c6001 100%);">
                   <div class="absolute inset-1.5 border border-dashed border-[#5d040c]/50 rounded-full"></div>
                   <!-- Sun face pattern larger -->
-                  <svg viewBox="0 0 100 100" class="w-14 h-14 opacity-80 text-[#5d040c]">
+                  <svg viewBox="0 0 100 100" class="w-12 h-12 md:w-14 md:h-14 opacity-80 text-[#5d040c]">
                     <circle cx="50" cy="50" r="18" fill="none" stroke="currentColor" stroke-width="6" />
                     <path d="M50 10 L50 22 M50 78 L50 90 M10 50 L22 50 M78 50 L90 50 M22 22 L31 31 M69 69 L78 78 M22 78 L31 69 M69 22 L78 31" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
                   </svg>
-                  <div class="absolute bottom-2.5 font-mono text-[0.55rem] tracking-widest text-[#5d040c] uppercase font-bold leading-none">JETON 1883</div>
+                  <div class="absolute bottom-2 md:bottom-2.5 font-mono text-[0.62rem] md:text-[0.68rem] tracking-widest text-[#5d040c] uppercase font-bold leading-none">JETON 1883</div>
                 </div>
-                <span class="font-mono text-[0.6rem] text-[#FFD84D] uppercase tracking-widest mt-1">Cliquer pour insérer</span>
+                <span class="font-mono text-xs md:text-sm text-[#FFD84D] uppercase tracking-widest mt-1 font-bold">Cliquer pour insérer</span>
               </div>
+              
             </div>
           </div>
 
           <!-- Bottom caption card footnote -->
-          <div class="mt-4 text-stone-300 font-serif text-xs italic opacity-85 leading-relaxed max-w-xl mx-auto border-t border-dashed border-[#FBECD2]/10 pt-4">
+          <div class="mt-4 text-stone-300 font-serif text-sm italic opacity-85 leading-relaxed max-w-xl mx-auto border-t border-dashed border-[#FBECD2]/10 pt-4">
             « Une fois le jeton introduit, les engrenages se mettront en frottement pour ouvrir le lourd voilage. Vous accéderez alors aux cadrans techniques. »
           </div>
-
         </div>
 
         <!-- Bottom Garland String Lights -->
@@ -245,7 +273,7 @@
               <h1 class="main-title font-circus text-2xl md:text-3xl text-[#FFD84D] uppercase py-0.5 tracking-wider">
                 LA CHAMBRE DES OBJETS BAVARDS
               </h1>
-              <p class="subtitle inline-block text-[0.6rem] font-mono tracking-widest text-[#F6E7C1] uppercase border-y border-amber-805/30 bg-black/70 px-4 py-0.5 mt-0.5 mx-auto max-w-md select-all shadow-md">
+              <p class="subtitle inline-block text-xs sm:text-sm font-mono tracking-widest text-[#F6E7C1] uppercase border-y border-amber-805/30 bg-black/70 px-4 py-1.5 mt-1 mx-auto max-w-md select-all shadow-md">
                 Toute curiosité sera examinée avec le plus grand sérieux absurde
               </p>
             </div>
@@ -304,8 +332,12 @@
                         <h2 class="section-title text-[#FFD84D] font-display text-xl md:text-2xl tracking-widest uppercase mb-1 text-center select-none text-shadow-sm">
                           CONTRÔLE TECHNIQUE
                         </h2>
-                        <div class="status-banner text-center mb-6 py-1 select-none border-b border-t border-[#d19c38]/20 bg-black/40">
-                          <span class="pulse-text font-display text-3xs tracking-[0.2em] text-[#FFD84D]">IDENTIFICATION DU SUJET MANDATAIRE</span>
+                        <div class="status-banner text-center mb-4 py-1 select-none border-b border-t border-[#d19c38]/20 bg-black/40">
+                          <span class="pulse-text font-display text-xs tracking-[0.2em] text-[#FFD84D]">IDENTIFICATION DU SUJET MANDATAIRE</span>
+                        </div>
+
+                        <div class="flex justify-center mb-4">
+                          <img src="/src/assets/images/steampunk_emblem_badge_1781026490022.png" alt="Sceau Officiel" class="w-16 h-16 object-contain rounded-full border border-[#d4a017]/30 shadow-md p-0.5 bg-black/50" referrerPolicy="no-referrer" />
                         </div>
 
                         <h3 class="step-title font-display text-[#FFD84D] text-base pb-1.5 mb-4 uppercase tracking-widest text-center text-shadow-sm">
@@ -313,20 +345,20 @@
                         </h3>
 
                         <div class="input-item flex flex-col gap-1.5 mb-6">
-                          <label for="visitor-pseudo-input" class="text-[0.68rem] font-mono text-stone-300 uppercase tracking-widest block text-left">
+                          <label for="visitor-pseudo-input" class="text-xs sm:text-sm font-mono text-stone-300 uppercase tracking-widest block text-left">
                             Déclaration de pseudonyme :
                           </label>
                           <div class="input-item-row flex gap-2">
-                            <input id="visitor-pseudo-input" type="text" placeholder="Ex. Baron du Boulon" class="flex-1 tactile-slot-input text-xs px-3 h-10 border-2" maxlength="35" />
-                            <button id="btn-get-pseudo" class="btn-brass-sm px-3 text-[0.65rem] tracking-wider uppercase bg-gradient-to-br from-yellow-600 to-amber-900 border border-yellow-700 font-mono font-bold rounded">GÉNÉRER</button>
+                            <input id="visitor-pseudo-input" type="text" placeholder="Ex. Baron du Boulon" class="flex-1 tactile-slot-input text-sm px-3 h-10 border-2" maxlength="35" />
+                            <button id="btn-get-pseudo" class="btn-brass-sm px-3.5 text-xs sm:text-sm tracking-wider uppercase bg-gradient-to-br from-yellow-600 to-amber-900 border border-yellow-700 font-mono font-bold rounded">GÉNÉRER</button>
                           </div>
                         </div>
 
-                        <div id="pseudo-error-alert" class="hidden mb-4 p-3 bg-[#5d040c] border border-[#d94141] rounded text-[0.7rem] font-serif text-amber-200 text-center italic">
+                        <div id="pseudo-error-alert" class="hidden mb-4 p-3 bg-[#5d040c] border border-[#d94141] rounded text-xs sm:text-sm font-serif text-amber-200 text-center italic">
                           ⚠️ Veuillez décliner votre identité absurde avant de continuer !
                         </div>
 
-                        <button id="btn-save-step1" class="tactile-heavy-lever w-full py-3.5 text-xs text-center uppercase tracking-widest font-bold">
+                        <button id="btn-save-step1" class="tactile-heavy-lever w-full py-3.5 text-sm text-center uppercase tracking-widest font-bold">
                           Décliner et continuer
                         </button>
                       </div>
@@ -340,8 +372,12 @@
                         <h2 class="section-title text-[#FFD84D] font-display text-xl md:text-2xl tracking-widest uppercase mb-1 text-center select-none text-shadow-sm">
                           CONTRÔLE TECHNIQUE
                         </h2>
-                        <div class="status-banner text-center mb-6 py-1 select-none border-b border-t border-[#d19c38]/20 bg-black/40">
-                          <span class="pulse-text font-display text-3xs tracking-[0.2em] text-[#FFD84D]">IDENTIFICATION DU SUJET MANDATAIRE</span>
+                        <div class="status-banner text-center mb-4 py-1 select-none border-b border-t border-[#d19c38]/20 bg-black/40">
+                          <span class="pulse-text font-display text-xs tracking-[0.2em] text-[#FFD84D]">IDENTIFICATION DU SUJET MANDATAIRE</span>
+                        </div>
+
+                        <div class="flex justify-center mb-4">
+                          <img src="/src/assets/images/steampunk_emblem_badge_1781026490022.png" alt="Sceau Officiel" class="w-16 h-16 object-contain rounded-full border border-[#d4a017]/30 shadow-md p-0.5 bg-black/50" referrerPolicy="no-referrer" />
                         </div>
 
                         <h3 class="step-title font-display text-[#FFD84D] text-base pb-1.5 mb-4 uppercase tracking-widest text-center text-shadow-sm">
@@ -350,10 +386,10 @@
 
                         <div class="vitals-grid flex flex-col gap-4 mb-6">
                           <div class="vital-item text-left">
-                            <label class="block text-[0.68rem] font-mono text-[#D4A017] uppercase tracking-wider mb-1">
+                            <label class="block text-sm font-mono text-[#D4A017] uppercase tracking-wider mb-2">
                               Tranche d'Âge du Sujet :
                             </label>
-                            <select id="visitor-age-select" class="w-full h-9 bg-black/85 border border-stone-800 rounded px-2.5 font-mono text-2xs text-[#F6E7C1] focus:ring-1 focus:ring-yellow-650 focus:outline-none">
+                            <select id="visitor-age-select" class="w-full h-11 bg-black/90 border border-stone-750 rounded-lg px-3.5 font-mono text-sm text-[#F6E7C1] focus:ring-2 focus:ring-yellow-500 focus:outline-none">
                               <option value="reliquat">Reliquat Antique (Moins de 20 ans)</option>
                               <option value="rouage" selected>Rouage Actif (20-40 ans)</option>
                               <option value="vapeur" >Vapeur Sifflante (40-60 ans)</option>
@@ -362,29 +398,29 @@
                           </div>
 
                           <div class="vital-item text-left">
-                            <label class="block text-[0.68rem] font-mono text-[#D4A017] uppercase tracking-wider mb-2">
+                            <label class="block text-sm font-mono text-[#D4A017] uppercase tracking-wider mb-2">
                               Potentiel Sifflant (Énergie intérieure) :
                             </label>
-                            <div class="flex justify-between gap-2">
-                              <button class="energy-metric-btn flex-1 text-center py-2 rounded text-[0.65rem] tracking-wider border font-mono uppercase transition-all bg-black/45 border-[#4a1815]/90 text-[#F6E7C1]" data-val="20">Veille</button>
-                              <button class="energy-metric-btn flex-1 text-center py-2 rounded text-[0.65rem] tracking-wider border font-mono uppercase transition-all bg-[#FFD84D] border-[#FFD84D] text-black font-semibold shadow-[0_0_8px_#FFD84D]" data-val="60">Frémissant</button>
-                              <button class="energy-metric-btn flex-1 text-center py-2 rounded text-[0.65rem] tracking-wider border font-mono uppercase transition-all bg-black/45 border-[#4a1815]/90 text-[#F6E7C1]" data-val="100">Pression</button>
+                            <div class="flex justify-between gap-2.5">
+                              <button class="energy-metric-btn flex-1 text-center py-2.5 rounded-lg text-sm tracking-wider border font-mono uppercase transition-all bg-black/45 border-[#4a1815]/90 text-[#F6E7C1]" data-val="20">Veille</button>
+                              <button class="energy-metric-btn flex-1 text-center py-2.5 rounded-lg text-sm tracking-wider border font-mono uppercase transition-all bg-[#FFD84D] border-[#FFD84D] text-black font-semibold shadow-[0_0_8px_#FFD84D]" data-val="60">Frémissant</button>
+                              <button class="energy-metric-btn flex-1 text-center py-2.5 rounded-lg text-sm tracking-wider border font-mono uppercase transition-all bg-black/45 border-[#4a1815]/90 text-[#F6E7C1]" data-val="100">Pression</button>
                             </div>
                           </div>
 
                           <div class="vital-item text-left">
-                            <label class="block text-[0.68rem] font-mono text-[#D4A017] uppercase tracking-wider mb-2">
+                            <label class="block text-sm font-mono text-[#D4A017] uppercase tracking-wider mb-2">
                               Degré d'Oxydation (Taux d'ennui) :
                             </label>
-                            <div class="flex justify-between gap-2">
-                              <button class="boredom-metric-btn flex-1 text-center py-2 rounded text-[0.65rem] tracking-wider border font-mono uppercase transition-all bg-[#FFD84D] border-[#FFD84D] text-black font-semibold shadow-[0_0_8px_#FFD84D]" data-val="10">Poli</button>
-                              <button class="boredom-metric-btn flex-1 text-center py-2 rounded text-[0.65rem] tracking-wider border font-mono uppercase transition-all bg-black/45 border-[#4a1815]/90 text-[#F6E7C1]" data-val="50">Patine</button>
-                              <button class="boredom-metric-btn flex-1 text-center py-2 rounded text-[0.65rem] tracking-wider border font-mono uppercase transition-all bg-black/45 border-[#4a1815]/90 text-[#F6E7C1]" data-val="90">Rouille</button>
+                            <div class="flex justify-between gap-2.5">
+                              <button class="boredom-metric-btn flex-1 text-center py-2.5 rounded-lg text-sm tracking-wider border font-mono uppercase transition-all bg-[#FFD84D] border-[#FFD84D] text-black font-semibold shadow-[0_0_8px_#FFD84D]" data-val="10">Poli</button>
+                              <button class="boredom-metric-btn flex-1 text-center py-2.5 rounded-lg text-sm tracking-wider border font-mono uppercase transition-all bg-black/45 border-[#4a1815]/90 text-[#F6E7C1]" data-val="50">Patine</button>
+                              <button class="boredom-metric-btn flex-1 text-center py-2.5 rounded-lg text-sm tracking-wider border font-mono uppercase transition-all bg-black/45 border-[#4a1815]/90 text-[#F6E7C1]" data-val="90">Rouille</button>
                             </div>
                           </div>
                         </div>
 
-                        <button id="btn-save-step2" class="tactile-heavy-lever w-full py-4 text-xs uppercase cursor-pointer">
+                        <button id="btn-save-step2" class="tactile-heavy-lever w-full py-4 text-sm font-bold uppercase tracking-widest cursor-pointer">
                           Continuer l'admission
                         </button>
                       </div>
@@ -398,14 +434,18 @@
                         <h2 class="section-title text-[#FFD84D] font-display text-xl md:text-2xl tracking-widest uppercase mb-1 text-center select-none text-shadow-sm">
                           CONTRÔLE TECHNIQUE
                         </h2>
-                        <div class="status-banner text-center mb-6 py-1 select-none border-b border-t border-[#d19c38]/20 bg-black/40">
-                          <span class="pulse-text font-display text-3xs tracking-[0.2em] text-[#FFD84D]">IDENTIFICATION DU SUJET MANDATAIRE</span>
+                        <div class="status-banner text-center mb-4 py-1 select-none border-b border-t border-[#d19c38]/20 bg-black/40">
+                          <span class="pulse-text font-display text-xs tracking-[0.2em] text-[#FFD84D]">IDENTIFICATION DU SUJET MANDATAIRE</span>
+                        </div>
+
+                        <div class="flex justify-center mb-4">
+                          <img src="/src/assets/images/steampunk_emblem_badge_1781026490022.png" alt="Sceau Officiel" class="w-16 h-16 object-contain rounded-full border border-[#d4a017]/30 shadow-md p-0.5 bg-black/50" referrerPolicy="no-referrer" />
                         </div>
 
                         <h3 class="step-title font-display text-[#FFD84D] text-base pb-1.5 mb-2 uppercase tracking-widest text-center text-shadow-sm">
                           3. CHARGEUR D'IMAGINATION
                         </h3>
-                        <p class="text-stone-300 italic text-[0.7rem] mb-6 max-w-xs mx-auto leading-relaxed">
+                        <p class="text-stone-300 italic text-sm mb-6 max-w-xs mx-auto leading-relaxed">
                           Tournez énergiquement la manivelle de laiton ci-dessous pour accumuler de l'imagination !
                         </p>
 
@@ -418,14 +458,14 @@
                         </div>
 
                         <!-- Manual Backup Trigger Button -->
-                        <button id="btn-backup-charge" class="btn-brass-sm px-4 py-2 mt-4 text-[0.62rem] font-mono tracking-widest rounded transition-all select-none hover:border-[#FFD84D]">
-                          [ BOUTON D'ASSISTANCE DE CHARGE ]
+                        <button id="btn-backup-charge" class="btn-brass-sm px-4 py-2.5 mt-4 text-sm font-mono tracking-widest font-bold uppercase rounded-lg transition-all select-none hover:border-[#FFD84D]">
+                          🔋 BOUTON D'ASSISTANCE DE CHARGE
                         </button>
 
                         <div class="progress-container bg-[#2c1a1a]/40 border-2 border-[#3d1214] p-3 rounded-lg mt-6 shadow-inner">
-                          <div class="progress-label flex justify-between font-mono text-[0.62rem] text-amber-300 uppercase tracking-widest mb-1 select-none">
+                          <div class="progress-label flex justify-between font-mono text-sm text-amber-300 uppercase tracking-widest mb-1.5 select-none">
                             <span>Imagination accumulée :</span>
-                            <span id="crank-progress-text">0%</span>
+                            <span id="crank-progress-text" class="font-bold text-white">0%</span>
                           </div>
                           <div class="progress-bar w-full h-3 bg-black rounded-full overflow-hidden border border-[#3d1214]/50">
                             <div id="crank-progress-fill" class="progress-fill h-full bg-linear-to-r from-[#D4A017] to-[#D94141] transition-all duration-100 ease-out" style="width: 0%;"></div>
@@ -439,18 +479,22 @@
                       <div class="plate-rivet-corner c-tl"></div><div class="plate-rivet-corner c-tr"></div><div class="plate-rivet-corner c-bl"></div><div class="plate-rivet-corner c-br"></div>
                       
                       <div class="relative z-20">
-                        <h2 id="quiz-step-header" class="section-title text-[#FFD84D] font-display text-lg drop-shadow-[0_4px_8px_rgba(0,0,0,1)] text-center mb-1 select-none text-shadow-sm leading-tight uppercase">
+                        <div class="flex justify-center mb-3">
+                          <img src="/src/assets/images/steampunk_emblem_badge_1781026490022.png" alt="Sceau Officiel" class="w-14 h-14 object-contain rounded-full border border-[#d4a017]/30 shadow-md p-0.5 bg-black/50" referrerPolicy="no-referrer" />
+                        </div>
+
+                        <h2 id="quiz-step-header" class="section-title text-[#FFD84D] font-display text-2xl drop-shadow-[0_4px_8px_rgba(0,0,0,1)] text-center mb-1 select-none text-shadow-sm leading-tight uppercase">
                           EXAMEN DE CONFORMITÉ
                         </h2>
-                        
-                        <div class="status-banner text-center mb-6 py-1 select-none border-b border-t border-[#d19c38]/20 bg-black/40">
-                          <span class="pulse-text font-display text-3xs tracking-[0.2em] font-semibold text-white">
+
+                        <div class="status-banner text-center mb-4 py-1 select-none border-b border-t border-[#d19c38]/20 bg-black/40">
+                          <span class="pulse-text font-display text-xs tracking-[0.2em] font-semibold text-white">
                             EXAMEN PHYSIO-POÉTIQUE
                           </span>
                         </div>
 
                         <div class="question-box mb-6 text-center select-none min-h-[65px] flex items-center justify-center bg-black/35 p-3 rounded-lg border border-[#d19c38]/15">
-                          <p id="quiz-question-text" class="question-text font-serif italic text-base text-[#F6E7C1] leading-relaxed">
+                          <p id="quiz-question-text" class="question-text font-serif italic text-lg text-[#F6E7C1] leading-relaxed">
                             « Questionnaire en cours de démarrage... »
                           </p>
                         </div>
@@ -472,38 +516,38 @@
 
                         <div class="vintage-ticket relative max-w-xl">
                           <div class="plate-rivet-corner c-tl scale-75"></div><div class="plate-rivet-corner c-tr scale-75"></div><div class="plate-rivet-corner c-bl scale-75"></div><div class="plate-rivet-corner c-br scale-75"></div>
-
-                          <div class="ticket-header border-b-2 border-dotted border-[#5d040c] pb-3 mb-4 text-center select-none">
-                            <div class="ticket-org text-[0.55rem] font-bold tracking-[2.5px] opacity-75 mb-1 text-[#5d040c]">
+                          <div class="ticket-header border-b-2 border-dotted border-[#5d040c] pb-3 mb-4 text-center select-none flex flex-col items-center">
+                            <img src="/src/assets/images/steampunk_emblem_badge_1781026490022.png" alt="Sceau Officiel" class="w-12 h-12 object-contain rounded-full border border-orange-950/20 shadow-sm p-0.5 bg-[#ebd4a0]/50 mb-1.5" referrerPolicy="no-referrer" />
+                            <div class="ticket-org text-xs font-bold tracking-[2.5px] opacity-75 mb-1 text-[#5d040c]">
                               DOSSIER POÉTO-MÉCANIQUE
                             </div>
-                            <h3 id="ticket-visitor-name" class="ticket-title font-display text-lg text-[#D94141] leading-none mb-1">
+                            <h3 id="ticket-visitor-name" class="ticket-title font-display text-xl text-[#D94141] leading-none mb-1">
                               INSPECTEUR INCORPORÉ
                             </h3>
-                            <p id="ticket-visitor-type" class="ticket-type italic text-[#5d040c] font-bold text-xs">
-                              PORTRAIT DETECTÉ
+                            <p id="ticket-visitor-type" class="ticket-type italic text-[#5d040c] font-bold text-sm">
+                              PORTRAIT DÉTECTÉ
                             </p>
                           </div>
 
-                          <div class="ticket-body text-[0.65rem] flex flex-col gap-2.5 select-none leading-relaxed text-black/85 text-left">
+                          <div class="ticket-body text-sm flex flex-col gap-2.5 select-none leading-relaxed text-black/85 text-left">
                             <div class="ticket-field flex flex-col border-b border-black/5 pb-1 text-left">
-                              <span class="field-label text-[0.5rem] uppercase opacity-70">Tranche d'Âge du Rouage</span>
-                              <span id="ticket-visitor-age" class="field-value font-bold text-xs text-[#2c1a1a]">rouage actif</span>
+                              <span class="field-label text-xs tracking-wider text-stone-500 font-semibold uppercase opacity-75">Tranche d'Âge du Rouage</span>
+                              <span id="ticket-visitor-age" class="field-value font-bold text-sm text-[#2c1a1a]">rouage actif</span>
                             </div>
 
                             <div class="ticket-field flex flex-col border-b border-black/5 pb-1 text-left">
-                              <span class="field-label text-[0.5rem] uppercase opacity-70">Potentiel Sifflant / Patine</span>
-                              <span id="ticket-visitor-metrics" class="field-value font-bold text-xs text-[#2c1a1a]">60%</span>
+                              <span class="field-label text-xs tracking-wider text-stone-500 font-semibold uppercase opacity-75">Potentiel Sifflant / Patine</span>
+                              <span id="ticket-visitor-metrics" class="field-value font-bold text-sm text-[#2c1a1a]">60%</span>
                             </div>
 
                             <div class="ticket-field flex flex-col border-b border-black/5 pb-1 text-left">
-                              <span class="field-label text-[0.5rem] uppercase opacity-70">Imagination Condensée</span>
-                              <span id="ticket-visitor-imagination" class="field-value font-bold text-xs text-amber-900">100%</span>
+                              <span class="field-label text-xs tracking-wider text-[#9d571d] font-semibold uppercase opacity-75">Imagination Condensée</span>
+                              <span id="ticket-visitor-imagination" class="field-value font-bold text-[#9d571d] text-sm">100%</span>
                             </div>
 
                             <div class="ticket-field flex flex-col pb-0 text-left">
-                              <span class="field-label text-[0.5rem] uppercase opacity-75">Agréement Technique</span>
-                              <span class="field-value font-bold text-2xs text-emerald-600 block flex items-center gap-1 font-sans">
+                              <span class="field-label text-xs tracking-wider text-stone-500 font-semibold uppercase opacity-75">Agréement Technique</span>
+                              <span class="field-value font-bold text-sm text-emerald-600 block flex items-center gap-1 font-sans">
                                 🛡️ ACCROCHÉ AVEC SUCCÈS
                               </span>
                             </div>
@@ -513,11 +557,11 @@
                             ACCORDÉ
                           </div>
 
-                          <p id="ticket-visitor-quote" class="italic text-center text-[0.7rem] text-stone-700 leading-normal border-t border-dashed border-[#5d040c]/30 pt-3 mt-3 select-none px-2 font-serif">
+                          <p id="ticket-visitor-quote" class="italic text-center text-sm text-stone-700 leading-normal border-t border-dashed border-[#5d040c]/30 pt-3 mt-3 select-none px-2 font-serif">
                             « Vous possédez une sensibilité rare pour les boulons rouillés »
                           </p>
 
-                          <button id="btn-confirm-entrance" class="tactile-heavy-lever w-full py-3.5 text-white uppercase mt-4 shadow-md text-2xs tracking-widest font-bold">
+                          <button id="btn-confirm-entrance" class="tactile-heavy-lever w-full py-3.5 text-white uppercase mt-4 shadow-md text-sm tracking-widest font-bold">
                             Accéder au cabinet
                           </button>
                         </div>
@@ -534,10 +578,10 @@
                   <!-- SCREEN 1: THE CABINET DIRECTORY MENU -->
                   <div id="view-menu" class="app-screen w-full max-w-7xl mx-auto flex flex-col justify-center">
                     <div class="text-center mb-6">
-                      <h2 class="section-title text-2xl md:text-3.5xl text-[#FFD84D] uppercase tracking-wide py-1.5" style="font-family: 'Sancreek', cursive;">
+                      <h2 class="section-title text-2xl md:text-3xl text-[#FFD84D] uppercase tracking-wide py-1.5" style="font-family: 'Sancreek', cursive;">
                         CABINET DES CURIOSITÉS
                       </h2>
-                      <div class="inline-flex items-center gap-2 bg-[#4a0812]/85 border border-[#3d0e1b]/70 px-4 py-1.5 rounded-full text-[0.68rem] font-mono text-[#FFD84D] shadow-inner mb-2">
+                      <div class="inline-flex items-center gap-2 bg-[#4a0812]/85 border border-[#3d0e1b]/70 px-4 py-1.5 rounded-full text-xs sm:text-sm font-mono text-[#FFD84D] shadow-inner mb-2">
                         <span>🛡️ Agent inspecteur homologué : <strong id="header-agent-name" class="text-white px-1 font-serif">Chercheur</strong></span>
                       </div>
                     </div>
@@ -546,35 +590,35 @@
                     <div class="menu-grid grid grid-cols-1 md:grid-cols-2 gap-5 max-w-3xl mx-auto">
                       
                       <!-- Card 1 -->
-                      <button class="menu-item-card-btn menu-btn p-4 relative flex flex-col items-center justify-between text-center min-h-[165px] select-none cursor-pointer group hover:border-[#FFD84D]" data-screen-id="invention">
+                      <button class="menu-item-card-btn menu-btn p-4 relative flex flex-col items-center justify-between text-center min-h-[175px] select-none cursor-pointer group hover:border-[#FFD84D]" data-screen-id="invention">
                         <div class="plate-rivet-corner c-tl scale-75"></div><div class="plate-rivet-corner c-tr scale-75"></div><div class="plate-rivet-corner c-bl scale-75"></div><div class="plate-rivet-corner c-br scale-75"></div>
-                        <div class="text-2xl text-amber-300 mb-2">👁️</div>
-                        <h4 class="font-display text-xs text-[#FFD84D] uppercase tracking-wide leading-tight mb-2">1. Analyseur d’Objets</h4>
-                        <p class="text-[0.68rem] font-serif italic text-stone-300 opacity-90 line-clamp-3 leading-tight select-none">Sonde les palpitations secrètes et les rouages intérieurs de vos reliques antiques.</p>
+                        <div class="text-3xl text-amber-300 mb-2">👁️</div>
+                        <h4 class="font-display text-sm sm:text-base text-[#FFD84D] uppercase tracking-wide leading-tight mb-2 font-bold">1. Analyseur d’Objets</h4>
+                        <p class="text-xs sm:text-sm font-serif italic text-stone-300 opacity-90 leading-relaxed select-none">Sonde les palpitations secrètes et les rouages intérieurs de vos reliques antiques.</p>
                       </button>
 
                       <!-- Card 2 -->
-                      <button class="menu-item-card-btn menu-btn p-4 relative flex flex-col items-center justify-between text-center min-h-[165px] select-none cursor-pointer group hover:border-[#FF2E9A]" data-screen-id="patent">
+                      <button class="menu-item-card-btn menu-btn p-4 relative flex flex-col items-center justify-between text-center min-h-[175px] select-none cursor-pointer group hover:border-[#FF2E9A]" data-screen-id="patent">
                         <div class="plate-rivet-corner c-tl scale-75"></div><div class="plate-rivet-corner c-tr scale-75"></div><div class="plate-rivet-corner c-bl scale-75"></div><div class="plate-rivet-corner c-br scale-75"></div>
-                        <div class="text-2xl text-[#FF2E9A] mb-2">📜</div>
-                        <h4 class="font-display text-xs text-[#FFD84D] uppercase tracking-wide leading-tight mb-2">2. Générateur de Brevets</h4>
-                        <p class="text-[0.68rem] font-serif italic text-stone-300 opacity-90 line-clamp-3 leading-tight select-none">Calcule des inventions absurdes et dépose des brevets farfelus d'un autre siècle.</p>
+                        <div class="text-3xl text-[#FF2E9A] mb-2">📜</div>
+                        <h4 class="font-display text-sm sm:text-base text-[#FFD84D] uppercase tracking-wide leading-tight mb-2 font-bold">2. Générateur de Brevets</h4>
+                        <p class="text-xs sm:text-sm font-serif italic text-stone-300 opacity-90 leading-relaxed select-none">Calcule des inventions absurdes et dépose des brevets farfelus d'un autre siècle.</p>
                       </button>
 
                       <!-- Card 3 -->
-                      <button class="menu-item-card-btn menu-btn p-4 relative flex flex-col items-center justify-between text-center min-h-[165px] select-none cursor-pointer group hover:border-[#14D8D8]" data-screen-id="translator">
+                      <button class="menu-item-card-btn menu-btn p-4 relative flex flex-col items-center justify-between text-center min-h-[175px] select-none cursor-pointer group hover:border-[#14D8D8]" data-screen-id="translator">
                         <div class="plate-rivet-corner c-tl scale-75"></div><div class="plate-rivet-corner c-tr scale-75"></div><div class="plate-rivet-corner c-bl scale-75"></div><div class="plate-rivet-corner c-br scale-75"></div>
-                        <div class="text-2xl text-[#14D8D8] mb-2">🔊</div>
-                        <h4 class="font-display text-xs text-[#FFD84D] uppercase tracking-wide leading-tight mb-2">3. Traducteur Bavard</h4>
-                        <p class="text-[0.68rem] font-serif italic text-stone-300 opacity-90 line-clamp-3 leading-tight select-none">Décode les grincements, râles de vapeur et sifflements nostalgiques des vieux boulons.</p>
+                        <div class="text-3xl text-[#14D8D8] mb-2">🔊</div>
+                        <h4 class="font-display text-sm sm:text-base text-[#FFD84D] uppercase tracking-wide leading-tight mb-2 font-bold">3. Traducteur Bavard</h4>
+                        <p class="text-xs sm:text-sm font-serif italic text-stone-300 opacity-90 leading-relaxed select-none">Décode les grincements, râles de vapeur et sifflements nostalgiques des vieux boulons.</p>
                       </button>
 
                       <!-- Card 4 -->
-                      <button class="menu-item-card-btn menu-btn p-4 relative flex flex-col items-center justify-between text-center min-h-[165px] select-none cursor-pointer group hover:border-[#19C37D]" data-screen-id="collection">
+                      <button class="menu-item-card-btn menu-btn p-4 relative flex flex-col items-center justify-between text-center min-h-[175px] select-none cursor-pointer group hover:border-[#19C37D]" data-screen-id="collection">
                         <div class="plate-rivet-corner c-tl scale-75"></div><div class="plate-rivet-corner c-tr scale-75"></div><div class="plate-rivet-corner c-bl scale-75"></div><div class="plate-rivet-corner c-br scale-75"></div>
-                        <div class="text-2xl text-[#19C37D] mb-2">📦</div>
-                        <h4 class="font-display text-xs text-[#FFD84D] uppercase tracking-wide leading-tight mb-2">4. Bureau de Classification</h4>
-                        <p class="text-[0.68rem] font-serif italic text-stone-300 opacity-90 line-clamp-3 leading-tight select-none">Parcourt et étiquette l'instabilité poétique d'objets confisqués par le comité.</p>
+                        <div class="text-3xl text-[#19C37D] mb-2">📦</div>
+                        <h4 class="font-display text-sm sm:text-base text-[#FFD84D] uppercase tracking-wide leading-tight mb-2 font-bold">4. Bureau de Classification</h4>
+                        <p class="text-xs sm:text-sm font-serif italic text-stone-300 opacity-90 leading-relaxed select-none">Parcourt et étiquette l'instabilité poétique d'objets confisqués par le comité.</p>
                       </button>
 
                     </div>
@@ -585,76 +629,94 @@
                     <div class="metal-heavy-plate-card p-6 relative">
                       <div class="plate-rivet-corner c-tl"></div><div class="plate-rivet-corner c-tr"></div><div class="plate-rivet-corner c-bl"></div><div class="plate-rivet-corner c-br"></div>
                       
+                      <!-- Guidance Stepper -->
+                      <div class="w-full max-w-xl mx-auto mb-6 bg-black/45 border border-amber-500/25 rounded-xl px-4 py-3 flex items-center justify-around text-center select-none shadow-md">
+                        <div class="flex items-center gap-2">
+                          <span class="flex items-center justify-center w-5.5 h-5.5 rounded-full bg-amber-500 text-black text-[11px] font-mono font-bold shadow-[0_0_8px_rgba(245,158,11,0.5)]">1</span>
+                          <span class="text-xs font-mono font-bold text-[#FFD84D]">Choisir la Relique</span>
+                        </div>
+                        <div class="text-stone-700 text-xs">➔</div>
+                        <div class="flex items-center gap-2">
+                          <span class="flex items-center justify-center w-5.5 h-5.5 rounded-full bg-[#1e070a] border border-amber-500/30 text-amber-500 text-[11px] font-mono font-bold">2</span>
+                          <span class="text-xs font-mono text-stone-300">Formuler sa Vocation</span>
+                        </div>
+                        <div class="text-stone-700 text-xs">➔</div>
+                        <div class="flex items-center gap-2">
+                          <span class="flex items-center justify-center w-5.5 h-5.5 rounded-full bg-[#1e070a] border border-amber-500/30 text-amber-500 text-[11px] font-mono font-bold">3</span>
+                          <span class="text-xs font-mono text-stone-300">Lancer l'Analyse</span>
+                        </div>
+                      </div>
+
                       <!-- Config -->
                       <div id="invention-request-container" class="flex flex-col items-center">
-                        <h3 class="section-title text-[#FFD84D] font-circus text-lg text-center uppercase tracking-widest mb-2">Analyseur d'Objets</h3>
-                        <p class="text-xs text-center text-stone-300 italic mb-4">Sondez la carcasse métallique d'antiquités absurdes pour cataloguer leurs secrets.</p>
+                        <h3 class="section-title text-[#FFD84D] font-circus text-xl text-center uppercase tracking-widest mb-1">Analyseur d'Objets</h3>
+                        <p class="text-xs text-center text-stone-300 italic mb-5">Sondez la carcasse métallique d'antiquités absurdes pour cataloguer leurs secrets.</p>
                         
-                        <div class="w-full text-left mb-4">
-                          <label class="block text-[0.62rem] font-mono tracking-widest text-[#FFD84D] uppercase mb-1.5">Sélectionner l'objet à sonder</label>
-                          <div id="invention-list-grid" class="grid grid-cols-2 md:grid-cols-4 gap-2.5 max-h-[160px] overflow-y-auto pr-1">
+                        <div class="w-full text-left mb-5">
+                          <label class="block text-xs font-mono tracking-wider text-amber-400 font-bold uppercase mb-2">1. Sélectionner l'objet à sonder</label>
+                          <div id="invention-list-grid" class="grid grid-cols-2 md:grid-cols-4 gap-3 max-h-[170px] overflow-y-auto pr-1">
                             <!-- Inventions buttons -->
                           </div>
                         </div>
 
-                        <div class="w-full text-left mb-6">
-                          <label class="block text-[0.62rem] font-mono tracking-widest text-[#FFD84D] uppercase mb-1.5">Méthode d'investigation</label>
-                          <select id="invention-method-select" class="w-full h-8 px-2 bg-black border border-stone-850 rounded text-stone-200 font-mono text-2xs focus:outline-none"></select>
+                        <div class="w-full text-left mb-5">
+                          <label class="block text-xs font-mono tracking-wider text-amber-400 font-bold uppercase mb-2">2. Méthode de sondage à vapeurs</label>
+                          <select id="invention-method-select" class="w-full h-11 px-3 bg-black/90 border border-stone-750 rounded-lg text-stone-100 font-mono text-xs focus:ring-2 focus:ring-yellow-500 focus:outline-none"></select>
                         </div>
 
                         <div class="w-full text-left mb-6">
-                          <div class="flex items-center justify-between mb-1.5">
-                            <label class="block text-[0.62rem] font-mono tracking-widest text-[#FFD84D] uppercase">Fonction supposée de l'objet</label>
-                            <button id="btn-suggest-function" type="button" class="text-[0.6rem] font-mono text-[#FFD84D] underline hover:text-white transition-colors cursor-pointer">Suggérer au hasard 🔮</button>
+                          <div class="flex items-center justify-between mb-2">
+                            <label class="block text-xs font-mono tracking-wider text-amber-400 font-bold uppercase">3. Vocation supposée de l'objet</label>
+                            <button id="btn-suggest-function" type="button" class="text-xs font-mono text-amber-300 underline hover:text-white transition-colors cursor-pointer">Suggérer au hasard 🔮</button>
                           </div>
-                          <input type="text" id="invention-function-input" placeholder="Saisissez une fonction absurde ou cliquez sur une suggestion ci-dessous..." class="w-full h-8 px-3 bg-black border border-stone-850 rounded text-stone-200 font-serif text-2xs focus:outline-none focus:border-[#FFD84D] mb-1.5" />
-                          <div id="invention-suggestions-container" class="flex flex-wrap gap-1">
+                          <input type="text" id="invention-function-input" placeholder="Saisissez une fonction absurde ou cliquez sur une suggestion ci-dessous..." class="w-full h-11 px-3.5 bg-black/90 border border-stone-750 rounded-lg text-stone-100 font-serif text-xs focus:outline-none focus:border-[#FFD84D] mb-2" />
+                          <div id="invention-suggestions-container" class="flex flex-wrap gap-2">
                             <!-- Helper quick pills generated by code -->
                           </div>
                         </div>
 
-                        <button id="btn-launch-analysis" class="tactile-heavy-lever w-full py-3.5 text-xs text-center uppercase tracking-widest font-bold">LANCER LE SONDEUR A VAPEUR</button>
-                        <button class="btn-return-to-menu w-full mt-2.5 bg-black/55 border border-stone-850 text-stone-400 py-1.5 rounded font-mono text-3xs uppercase tracking-widest hover:border-stone-750">Retour au Cabinet</button>
+                        <button id="btn-launch-analysis" class="tactile-heavy-lever w-full py-4 text-xs sm:text-sm text-center uppercase tracking-widest font-extrabold shadow-md">LANCER LE SONDEUR A VAPEUR</button>
+                        <button class="btn-return-to-menu w-full mt-3 bg-black/55 border border-stone-850 text-stone-400 py-2.5 rounded-lg font-mono text-xs uppercase tracking-widest hover:border-stone-700 hover:text-white transition-all">◀ Retour au Cabinet</button>
                       </div>
 
                       <!-- Outcome ticket -->
-                      <div id="invention-result-ticket" class="hidden flex flex-col items-center w-full">
+                      <div id="invention-result-ticket" class="hidden flex flex-col items-center w-full animate-fade-in">
                         <div class="vintage-ticket relative max-w-xl">
                           <div class="plate-rivet-corner c-tl scale-75"></div><div class="plate-rivet-corner c-tr scale-75"></div><div class="plate-rivet-corner c-bl scale-75"></div><div class="plate-rivet-corner c-br scale-75"></div>
                           
                           <div class="ticket-header border-b border-dotted border-black/25 pb-3 mb-4 text-center">
-                            <h4 id="inv-ticket-title" class="font-display text-base text-[#D94141] mb-1">COMPTE-RENDU</h4>
-                            <p class="text-[0.55rem] font-bold text-stone-600 uppercase">ANALYSE MOÉLCULAIRE SPECTRO-PHONIQUE</p>
+                            <h4 id="inv-ticket-title" class="font-display text-lg text-[#D94141] mb-1">COMPTE-RENDU</h4>
+                            <p class="text-[0.62rem] font-bold text-stone-600 uppercase tracking-widest">ANALYSE MOLÉCULAIRE SPECTRO-PHONIQUE</p>
                           </div>
 
-                          <div class="ticket-body text-[0.65rem] flex flex-col gap-2.5 select-none leading-relaxed text-black/85 text-left">
-                            <div class="border-b border-black/5 pb-1 flex flex-col">
-                              <span class="opacity-70 text-[0.5rem] uppercase font-bold">Objet testé</span>
+                          <div class="ticket-body text-xs flex flex-col gap-2.5 select-none leading-relaxed text-black/85 text-left">
+                            <div class="border-b border-black/5 pb-1.5 flex flex-col">
+                              <span class="opacity-70 text-[0.68rem] tracking-wider text-stone-500 font-semibold uppercase">Objet testé</span>
                               <span id="inv-detail-val-name" class="font-bold text-xs text-[#2c1a1a]">Horloge</span>
                             </div>
-                            <div class="border-b border-black/5 pb-1 flex flex-col">
-                              <span class="opacity-70 text-[0.5rem] uppercase font-bold">Méthode de sondage</span>
+                            <div class="border-b border-black/5 pb-1.5 flex flex-col">
+                              <span class="opacity-70 text-[0.68rem] tracking-wider text-stone-500 font-semibold uppercase">Méthode de sondage</span>
                               <span id="inv-detail-val-method" class="font-bold text-xs text-[#2c1a1a]">Rayon de curiosité</span>
                             </div>
-                            <div class="border-b border-black/5 pb-1 flex flex-col">
-                              <span class="opacity-70 text-[0.5rem] uppercase font-bold">Fonction supposée de l'objet</span>
+                            <div class="border-b border-black/5 pb-1.5 flex flex-col">
+                              <span class="opacity-70 text-[0.68rem] tracking-wider text-stone-500 font-semibold uppercase">Fonction supposée de l'objet</span>
                               <span id="inv-detail-val-function" class="font-bold text-xs text-[#2c1a1a] italic">-</span>
                             </div>
-                            <div class="border-b border-black/5 pb-1 flex flex-col">
-                              <span class="opacity-70 text-[0.5rem] uppercase font-bold">Composantes secrètes trouvées</span>
+                            <div class="border-b border-black/5 pb-1.5 flex flex-col">
+                              <span class="opacity-70 text-[0.68rem] tracking-wider text-stone-500 font-semibold uppercase">Composantes secrètes trouvées</span>
                               <span id="inv-detail-val-components" class="font-bold text-xs text-[#2c1a1a]">3x Engrenages sentimentaux</span>
                             </div>
-                            <div class="pb-1 flex flex-col">
-                              <span class="opacity-70 text-[0.5rem] uppercase font-bold">Diagnostic du comité</span>
+                            <div class="pb-0 flex flex-col">
+                              <span class="opacity-70 text-[0.68rem] tracking-wider text-[#9d571d] font-semibold uppercase">Diagnostic du comité conservateur</span>
                               <span id="inv-detail-val-diagnosis" class="font-bold text-xs text-amber-900 italic">Vapeur excessive.</span>
                             </div>
                           </div>
 
                           <div class="red-stamp text-[#B91C1C]">DÉTECTÉ</div>
 
-                          <button id="btn-retry-invention" class="tactile-heavy-lever w-full py-3.5 mt-5 text-2xs uppercase tracking-widest font-bold">Sonder une autre relique</button>
+                          <button id="btn-retry-invention" class="tactile-heavy-lever w-full py-4 mt-5 text-xs uppercase tracking-widest font-extrabold shadow-md">Sonder une autre relique</button>
                         </div>
-                        <button class="btn-return-to-menu w-full mt-3 bg-black/55 border border-stone-850 text-stone-400 py-1.5 rounded font-mono text-3xs uppercase tracking-widest hover:border-stone-750">Retour au Cabinet</button>
+                        <button class="btn-return-to-menu w-full mt-4 bg-black/55 border border-stone-850 text-stone-400 py-2.5 rounded-lg font-mono text-xs uppercase tracking-widest hover:border-stone-700 hover:text-white transition-all">◀ Retour au Cabinet</button>
                       </div>
 
                     </div>
@@ -665,98 +727,116 @@
                     <div class="metal-heavy-plate-card p-6 relative">
                       <div class="plate-rivet-corner c-tl"></div><div class="plate-rivet-corner c-tr"></div><div class="plate-rivet-corner c-bl"></div><div class="plate-rivet-corner c-br"></div>
                       
+                      <!-- Guidance Stepper -->
+                      <div class="w-full max-w-xl mx-auto mb-6 bg-black/45 border border-amber-500/25 rounded-xl px-4 py-3 flex items-center justify-around text-center select-none shadow-md">
+                        <div class="flex items-center gap-2">
+                          <span class="flex items-center justify-center w-5.5 h-5.5 rounded-full bg-amber-500 text-black text-[11px] font-mono font-bold shadow-[0_0_8px_rgba(245,158,11,0.5)]">1</span>
+                          <span class="text-xs font-mono font-bold text-[#FFD84D]">Nom & Matériau</span>
+                        </div>
+                        <div class="text-stone-700 text-xs">➔</div>
+                        <div class="flex items-center gap-2">
+                          <span class="flex items-center justify-center w-5.5 h-5.5 rounded-full bg-[#1e070a] border border-amber-500/30 text-amber-500 text-[11px] font-mono font-bold">2</span>
+                          <span class="text-xs font-mono text-stone-300">Vocation & Risque</span>
+                        </div>
+                        <div class="text-stone-700 text-xs">➔</div>
+                        <div class="flex items-center gap-2">
+                          <span class="flex items-center justify-center w-5.5 h-5.5 rounded-full bg-[#1e070a] border border-amber-500/30 text-amber-500 text-[11px] font-mono font-bold">3</span>
+                          <span class="text-xs font-mono text-stone-300">Dépôt</span>
+                        </div>
+                      </div>
+
                       <div id="patent-request-container" class="flex flex-col items-center">
-                        <h3 class="section-title text-[#FFD84D] font-circus text-lg text-center uppercase tracking-widest mb-1">Générateur de Brevets</h3>
-                        <p class="text-xs text-center text-stone-300 italic mb-4">Combinez des alliages interdits pour formuler une nouvelle invention légendaire.</p>
+                        <h3 class="section-title text-[#FFD84D] font-circus text-xl text-center uppercase tracking-widest mb-1">Générateur de Brevets</h3>
+                        <p class="text-xs text-center text-stone-300 italic mb-5">Combinez des alliages interdits pour formuler une nouvelle invention légendaire.</p>
                         
                         <!-- NEW CUSTOM USER INPUTS FOR THE PATENT GENERATOR -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 w-full text-left mb-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full text-left mb-4">
                           <div>
-                            <label class="block text-[0.62rem] font-mono tracking-widest text-[#FFD84D] uppercase mb-1">Nom exclusif de l'invention (Optionnel)</label>
-                            <input type="text" id="patent-name-input" placeholder="Ex: L'Évaporateur de regrets..." class="w-full h-8 px-3 bg-black border border-stone-850 rounded text-stone-200 font-serif text-2xs focus:outline-none focus:border-[#FFD84D]" />
+                            <label class="block text-xs font-mono tracking-wider text-amber-400 font-bold uppercase mb-2">1. Nom de l'invention (Optionnel)</label>
+                            <input type="text" id="patent-name-input" placeholder="Ex: L'Évaporateur de regrets..." class="w-full h-11 px-3.5 bg-black/90 border border-stone-750 rounded-lg text-stone-100 font-serif text-xs focus:outline-none focus:border-[#FFD84D]" />
                           </div>
                           <div>
-                            <label class="block text-[0.62rem] font-mono tracking-widest text-[#FFD84D] uppercase mb-1">Matériau de structure</label>
-                            <div class="flex gap-1.55">
-                              <select id="patent-material-select" class="flex-1 h-8 px-2 bg-black border border-stone-850 text-stone-200 rounded font-mono text-2xs focus:outline-none"></select>
-                              <input type="text" id="patent-material-custom" placeholder="Autre matériau..." class="w-1/3 h-8 px-2 bg-black border border-stone-850 rounded text-stone-200 font-mono text-2xs focus:outline-none focus:border-[#FFD84D]" />
+                            <label class="block text-xs font-mono tracking-wider text-amber-400 font-bold uppercase mb-2">2. Matériau de structure</label>
+                            <div class="flex gap-2">
+                              <select id="patent-material-select" class="flex-1 h-11 px-3 bg-black/95 border border-stone-750 text-stone-100 rounded-lg font-mono text-xs focus:outline-none"></select>
+                              <input type="text" id="patent-material-custom" placeholder="Autre matériau..." class="w-1/3 h-11 px-2.5 bg-black/90 border border-stone-750 rounded-lg text-stone-100 font-mono text-xs focus:outline-none focus:border-[#FFD84D]" />
                             </div>
                           </div>
                         </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 w-full text-left mb-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full text-left mb-4">
                           <div>
-                            <label class="block text-[0.62rem] font-mono tracking-widest text-[#FFD84D] uppercase mb-1">Utilité principale ou Vocation</label>
-                            <div class="flex gap-1.55">
-                              <select id="patent-function-select" class="flex-1 h-8 px-2 bg-black border border-stone-850 text-stone-200 rounded font-mono text-2xs focus:outline-none"></select>
-                              <input type="text" id="patent-function-custom" placeholder="Autre vocation..." class="w-1/3 h-8 px-2 bg-black border border-stone-850 rounded text-stone-200 font-mono text-2xs focus:outline-none focus:border-[#FFD84D]" />
+                            <label class="block text-xs font-mono tracking-wider text-amber-400 font-bold uppercase mb-2">3. Utilité principale ou Vocation</label>
+                            <div class="flex gap-2">
+                              <select id="patent-function-select" class="flex-1 h-11 px-3 bg-black/95 border border-stone-750 text-stone-100 rounded-lg font-mono text-xs focus:outline-none"></select>
+                              <input type="text" id="patent-function-custom" placeholder="Autre vocation..." class="w-1/3 h-11 px-2.5 bg-black/90 border border-stone-750 rounded-lg text-stone-100 font-mono text-xs focus:outline-none focus:border-[#FFD84D]" />
                             </div>
                           </div>
                           <div>
-                            <label class="block text-[0.62rem] font-mono tracking-widest text-[#FFD84D] uppercase mb-1">Danger majeur répertorié</label>
-                            <div class="flex gap-1.55">
-                              <select id="patent-hazard-select" class="flex-1 h-8 px-2 bg-black border border-stone-850 text-stone-200 rounded font-mono text-2xs focus:outline-none"></select>
-                              <input type="text" id="patent-hazard-custom" placeholder="Autre danger..." class="w-1/3 h-8 px-2 bg-black border border-stone-850 rounded text-stone-200 font-mono text-2xs focus:outline-none focus:border-[#FFD84D]" />
+                            <label class="block text-xs font-mono tracking-wider text-amber-400 font-bold uppercase mb-2">4. Danger majeur répertorié</label>
+                            <div class="flex gap-2">
+                              <select id="patent-hazard-select" class="flex-1 h-11 px-3 bg-black/95 border border-stone-750 text-stone-100 rounded-lg font-mono text-xs focus:outline-none"></select>
+                              <input type="text" id="patent-hazard-custom" placeholder="Autre danger..." class="w-1/3 h-11 px-2.5 bg-black/90 border border-stone-750 rounded-lg text-stone-100 font-mono text-xs focus:outline-none focus:border-[#FFD84D]" />
                             </div>
                           </div>
                         </div>
 
                         <!-- Interactive patent sliders -->
-                        <div class="w-full text-left mb-6 bg-black/45 border border-stone-850 p-3 rounded-lg flex flex-col gap-3">
+                        <div class="w-full text-left mb-6 bg-black/45 border border-stone-850 p-3.5 rounded-lg flex flex-col gap-3">
                           <div>
-                            <div class="flex justify-between items-center text-[0.6rem] font-mono text-stone-400 mb-1">
-                              <span class="uppercase tracking-widest text-[#FFD84D]">Probabilité théorique de fonctionnement</span>
+                            <div class="flex justify-between items-center text-xs font-mono text-stone-400 mb-2">
+                              <span class="uppercase tracking-wider text-amber-400 font-bold">Probabilité théorique de fonctionnement</span>
                               <span id="patent-success-val" class="text-amber-250 font-bold">40% (Absurde)</span>
                             </div>
-                            <input id="patent-success-slider" type="range" min="0" max="100" value="40" class="w-full cursor-pointer accent-[#D94141]" />
+                            <input id="patent-success-slider" type="range" min="0" max="100" value="40" class="w-full h-2 rounded-lg cursor-pointer accent-[#D94141] bg-stone-900" />
                           </div>
                         </div>
 
-                        <button id="btn-launch-patent" class="tactile-heavy-lever w-full py-3.5 text-xs text-center uppercase tracking-widest font-bold">DÉPOSER LE BREVET ABSURDE</button>
-                        <button class="btn-return-to-menu w-full mt-2.5 bg-black/55 border border-stone-850 text-stone-400 py-1.5 rounded font-mono text-3xs uppercase tracking-widest hover:border-stone-750">Retour au Cabinet</button>
+                        <button id="btn-launch-patent" class="tactile-heavy-lever w-full py-4 text-xs sm:text-sm text-center uppercase tracking-widest font-extrabold shadow-md">DÉPOSER LE BREVET ABSURDE</button>
+                        <button class="btn-return-to-menu w-full mt-3 bg-black/55 border border-stone-850 text-stone-400 py-2.5 rounded-lg font-mono text-xs uppercase tracking-widest hover:border-stone-700 hover:text-white transition-all">◀ Retour au Cabinet</button>
                       </div>
 
-                      <div id="patent-result-ticket" class="hidden flex flex-col items-center w-full">
+                      <div id="patent-result-ticket" class="hidden flex flex-col items-center w-full animate-fade-in">
                         <div class="vintage-ticket relative max-w-xl">
                           <div class="plate-rivet-corner c-tl scale-75"></div><div class="plate-rivet-corner c-tr scale-75"></div><div class="plate-rivet-corner c-bl scale-75"></div><div class="plate-rivet-corner c-br scale-75"></div>
                           
                           <div class="ticket-header border-b border-dotted border-black/25 pb-3 mb-4 text-center">
-                            <h4 id="pat-ticket-title" class="font-display text-base text-[#D94141] mb-1 uppercase">BREVET N°</h4>
-                            <p class="text-[0.55rem] font-bold text-stone-600 uppercase">OFFICE NATIONAL DU BREVET D'ILLUSION</p>
+                            <h4 id="pat-ticket-title" class="font-display text-lg text-[#D94141] mb-1 uppercase">BREVET N°</h4>
+                            <p class="text-[0.62rem] font-bold text-stone-600 uppercase tracking-widest font-mono">OFFICE NATIONAL DU BREVET D'ILLUSION</p>
                           </div>
 
-                          <div class="ticket-body text-[0.65rem] flex flex-col gap-2.5 select-none leading-relaxed text-black/85 text-left">
-                            <div class="border-b border-black/5 pb-1 flex flex-col">
-                              <span class="opacity-70 text-[0.5rem] uppercase font-bold">Désignation de l'appareil</span>
+                          <div class="ticket-body text-xs flex flex-col gap-2.5 select-none leading-relaxed text-black/85 text-left">
+                            <div class="border-b border-black/5 pb-1.5 flex flex-col">
+                              <span class="opacity-70 text-[0.68rem] tracking-wider text-stone-500 font-semibold uppercase">Désignation de l'appareil</span>
                               <span id="pat-detail-title" class="font-bold text-xs text-[#2c1a1a]">MACHINE</span>
                             </div>
-                            <div class="border-b border-black/5 pb-1 flex flex-col">
-                              <span class="opacity-70 text-[0.5rem] uppercase font-bold">Matériaux constitutifs</span>
+                            <div class="border-b border-black/5 pb-1.5 flex flex-col">
+                              <span class="opacity-70 text-[0.68rem] tracking-wider text-stone-500 font-semibold uppercase">Matériaux constitutifs</span>
                               <span id="pat-detail-materials" class="font-bold text-xs text-[#2c1a1a]">Laiton</span>
                             </div>
-                            <div class="border-b border-black/5 pb-1 flex flex-col">
-                              <span class="opacity-70 text-[0.5rem] uppercase font-bold">Vocation brevetée</span>
+                            <div class="border-b border-black/5 pb-1.5 flex flex-col">
+                              <span class="opacity-70 text-[0.68rem] tracking-wider text-stone-500 font-semibold uppercase">Vocation brevetée</span>
                               <span id="pat-detail-functions" class="font-bold text-xs text-[#2c1a1a]">Traduire le mardi</span>
                             </div>
-                            <div class="border-b border-black/5 pb-1 flex flex-col">
-                              <span class="opacity-70 text-[0.5rem] uppercase font-bold">Risques d'instabilité</span>
+                            <div class="border-b border-black/5 pb-1.5 flex flex-col">
+                              <span class="opacity-70 text-[0.68rem] tracking-wider text-stone-500 font-semibold uppercase">Risques d'instabilité</span>
                               <span id="pat-detail-hazards" class="font-bold text-xs text-red-800">Attire les canards</span>
                             </div>
-                            <div class="border-b border-black/5 pb-1 flex flex-col">
-                              <span class="opacity-70 text-[0.5rem] uppercase font-bold">Indice de faisabilité</span>
+                            <div class="border-b border-black/5 pb-1.5 flex flex-col">
+                              <span class="opacity-70 text-[0.68rem] tracking-wider text-stone-500 font-semibold uppercase">Indice de faisabilité</span>
                               <span id="pat-detail-probability" class="font-bold text-xs text-[#1e293b]">40%</span>
                             </div>
                             <div class="pb-0 flex flex-col">
-                              <span class="opacity-70 text-[0.5rem] uppercase font-bold">Portrait physique</span>
+                              <span class="opacity-70 text-[0.68rem] tracking-wider text-stone-500 font-semibold uppercase">Portrait physique</span>
                               <span id="pat-detail-status" class="font-bold text-xs text-emerald-700 font-sans">STABLE</span>
                             </div>
                           </div>
 
                           <div class="red-stamp text-[#B91C1C]">BREVETÉ</div>
 
-                          <button id="btn-retry-patent" class="tactile-heavy-lever w-full py-3.5 mt-5 text-2xs uppercase tracking-widest font-bold">Rédiger un nouveau brevet</button>
+                          <button id="btn-retry-patent" class="tactile-heavy-lever w-full py-4 mt-5 text-xs uppercase tracking-widest font-extrabold shadow-md">Rédiger un nouveau brevet</button>
                         </div>
-                        <button class="btn-return-to-menu w-full mt-3 bg-black/55 border border-stone-850 text-stone-400 py-1.5 rounded font-mono text-3xs uppercase tracking-widest hover:border-stone-750">Retour au Cabinet</button>
+                        <button class="btn-return-to-menu w-full mt-4 bg-black/55 border border-stone-850 text-stone-400 py-2.5 rounded-lg font-mono text-xs uppercase tracking-widest hover:border-stone-700 hover:text-white transition-all">◀ Retour au Cabinet</button>
                       </div>
 
                     </div>
@@ -767,15 +847,33 @@
                     <div class="metal-heavy-plate-card p-6 relative">
                       <div class="plate-rivet-corner c-tl"></div><div class="plate-rivet-corner c-tr"></div><div class="plate-rivet-corner c-bl"></div><div class="plate-rivet-corner c-br"></div>
                       
+                      <!-- Guidance Stepper -->
+                      <div class="w-full max-w-xl mx-auto mb-6 bg-black/45 border border-amber-500/25 rounded-xl px-4 py-3 flex items-center justify-around text-center select-none shadow-md">
+                        <div class="flex items-center gap-2">
+                          <span class="flex items-center justify-center w-5.5 h-5.5 rounded-full bg-amber-500 text-black text-[11px] font-mono font-bold shadow-[0_0_8px_rgba(245,158,11,0.5)]">1</span>
+                          <span class="text-xs font-mono font-bold text-[#FFD84D]">Raccorder canaux</span>
+                        </div>
+                        <div class="text-stone-700 text-xs">➔</div>
+                        <div class="flex items-center gap-2">
+                          <span class="flex items-center justify-center w-5.5 h-5.5 rounded-full bg-[#1e070a] border border-amber-500/30 text-amber-500 text-[11px] font-mono font-bold">2</span>
+                          <span class="text-xs font-mono text-stone-300">Capter sémantique</span>
+                        </div>
+                        <div class="text-stone-700 text-xs">➔</div>
+                        <div class="flex items-center gap-2">
+                          <span class="flex items-center justify-center w-5.5 h-5.5 rounded-full bg-[#1e070a] border border-amber-500/30 text-amber-500 text-[11px] font-mono font-bold">3</span>
+                          <span class="text-xs font-mono text-stone-300">Interpréter</span>
+                        </div>
+                      </div>
+
                       <div id="translator-request-container" class="flex flex-col items-center">
-                        <h3 class="section-title text-[#FFD84D] font-circus text-lg text-center uppercase tracking-widest mb-1">Traducteur Bavard</h3>
-                        <p class="text-xs text-center text-stone-300 italic mb-4">Mettez les grincements en friture d'éther pour décrypter leur sémantique.</p>
+                        <h3 class="section-title text-[#FFD84D] font-circus text-xl text-center uppercase tracking-widest mb-1">Traducteur Bavard</h3>
+                        <p class="text-xs text-center text-stone-300 italic mb-5">Mettez les grincements en friture d'éther pour décrypter leur sémantique.</p>
                         
                         <!-- Interactive targeted object and jack panels -->
-                        <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-3.5 mb-4 text-left">
+                        <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 text-left">
                           <div>
-                            <label class="block text-[0.62rem] font-mono tracking-widest text-[#FFD84D] uppercase mb-1">Objet d'étude ciblé</label>
-                            <select id="translator-relic-select" class="w-full h-8 px-2 bg-black border border-stone-850 text-stone-200 rounded font-mono text-2xs focus:outline-none">
+                            <label class="block text-xs font-mono tracking-wider text-amber-400 font-bold uppercase mb-2">1. Objet d'étude ciblé</label>
+                            <select id="translator-relic-select" class="w-full h-11 px-3 bg-black/95 border border-stone-750 text-stone-100 rounded-lg font-mono text-xs focus:outline-none">
                               <option value="La Licorne Mystique">La Licorne Mystique 🦄</option>
                               <option value="L'Arlequin automate">L'Arlequin automate 🎭</option>
                               <option value="La Pendule Nostalgique">La Pendule Nostalgique 🕰️</option>
@@ -784,119 +882,119 @@
                             </select>
                           </div>
                           <div>
-                            <label class="block text-[0.62rem] font-mono tracking-widest text-[#FFD84D] uppercase mb-1">Fiche Jack de raccordement</label>
-                            <div class="flex gap-1 h-8">
-                              <button id="btn-jack-1" type="button" class="flex-1 bg-[#4a0812] border border-[#d4a017]/30 hover:border-[#FFD84D] text-[#FFD84D] rounded font-mono text-[0.55rem] uppercase tracking-wider cursor-pointer transition-all active:scale-95">Canal Low</button>
-                              <button id="btn-jack-2" type="button" class="flex-1 bg-stone-900 border border-stone-700 hover:border-[#FFD84D] text-stone-300 rounded font-mono text-[0.55rem] uppercase tracking-wider cursor-pointer transition-all active:scale-95">Canal Mid</button>
-                              <button id="btn-jack-3" type="button" class="flex-1 bg-stone-900 border border-stone-700 hover:border-[#FFD84D] text-stone-300 rounded font-mono text-[0.55rem] uppercase tracking-wider cursor-pointer transition-all active:scale-95">Canal High</button>
+                            <label class="block text-xs font-mono tracking-wider text-amber-400 font-bold uppercase mb-2">2. Fiche Jack de raccordement</label>
+                            <div class="flex gap-2 h-11">
+                              <button id="btn-jack-1" type="button" class="flex-1 bg-[#4a0812] border border-[#d4a017]/40 hover:border-[#FFD84D] text-[#FFD84D] rounded-lg font-mono text-xs uppercase tracking-wider cursor-pointer transition-all active:scale-95">Canal Low</button>
+                              <button id="btn-jack-2" type="button" class="flex-1 bg-stone-905 border border-stone-700 hover:border-[#FFD84D] text-stone-300 rounded-lg font-mono text-xs uppercase tracking-wider cursor-pointer transition-all active:scale-95">Canal Mid</button>
+                              <button id="btn-jack-3" type="button" class="flex-1 bg-stone-905 border border-stone-700 hover:border-[#FFD84D] text-stone-300 rounded-lg font-mono text-xs uppercase tracking-wider cursor-pointer transition-all active:scale-95">Canal High</button>
                             </div>
                           </div>
                         </div>
 
                         <!-- Oscilloscope graphic display -->
-                        <div class="w-full bg-[#130305] border-4 border-[#3d1214] p-4 rounded-xl mb-4 flex flex-col items-center shadow-inner relative overflow-hidden">
-                          <div class="flex items-center justify-center gap-1.5 h-12 w-full select-none mb-4 z-10">
+                        <div class="w-full bg-[#130305]/95 border-4 border-[#3d1214] p-5 rounded-2xl mb-5 flex flex-col items-center shadow-inner relative overflow-hidden">
+                          <div class="flex items-center justify-center gap-2 h-14 w-full select-none mb-4 z-10">
                             <!-- Visualizer oscillating columns -->
-                            <div id="wave-bar-1" class="wave-bar w-1.5 h-6 rounded-full bg-[#FFD84D]" style="animation-duration: 0.6s;"></div>
-                            <div id="wave-bar-2" class="wave-bar w-1.5 h-10 rounded-full bg-[#FFD84D]" style="animation-duration: 0.8s; animation-delay: 0.1s;"></div>
-                            <div id="wave-bar-3" class="wave-bar w-1.5 h-4 rounded-full bg-[#FFD84D]" style="animation-duration: 0.5s; animation-delay: 0.2s;"></div>
-                            <div id="wave-bar-4" class="wave-bar w-1.5 h-12 rounded-full bg-[#FFD84D]" style="animation-duration: 0.7s; animation-delay: 0.3s;"></div>
-                            <div id="wave-bar-5" class="wave-bar w-1.5 h-7 rounded-full bg-[#FFD84D]" style="animation-duration: 0.9s; animation-delay: 0.1s;"></div>
-                            <div id="wave-bar-6" class="wave-bar w-1.5 h-10 rounded-full bg-[#FFD84D]" style="animation-duration: 0.4s; animation-delay: 0.4s;"></div>
+                            <div id="wave-bar-1" class="wave-bar w-2 h-6 rounded-full bg-[#FFD84D]" style="animation-duration: 0.6s;"></div>
+                            <div id="wave-bar-2" class="wave-bar w-2 h-10 rounded-full bg-[#FFD84D]" style="animation-duration: 0.8s; animation-delay: 0.1s;"></div>
+                            <div id="wave-bar-3" class="wave-bar w-2 h-4 rounded-full bg-[#FFD84D]" style="animation-duration: 0.5s; animation-delay: 0.2s;"></div>
+                            <div id="wave-bar-4" class="wave-bar w-2 h-12 rounded-full bg-[#FFD84D]" style="animation-duration: 0.7s; animation-delay: 0.3s;"></div>
+                            <div id="wave-bar-5" class="wave-bar w-2 h-7 rounded-full bg-[#FFD84D]" style="animation-duration: 0.9s; animation-delay: 0.1s;"></div>
+                            <div id="wave-bar-6" class="wave-bar w-2 h-10 rounded-full bg-[#FFD84D]" style="animation-duration: 0.4s; animation-delay: 0.4s;"></div>
                           </div>
 
                           <div class="w-full text-center z-10 select-none">
-                            <button id="btn-cap-noise" class="inline-flex items-center gap-1.5 bg-[#4a0812] border-2 border-[#D4A017] text-3xs px-3 py-1 rounded-full text-[#FFD84D] hover:bg-[#6c1220] mb-2 cursor-pointer transition-colors shadow-md uppercase tracking-wider font-mono">
+                            <button id="btn-cap-noise" class="inline-flex items-center gap-2 bg-[#4a0812] border-2 border-[#D4A017] text-xs px-4 py-2 rounded-full text-[#FFD84D] hover:bg-[#6c1220] mb-3.5 cursor-pointer transition-colors shadow-md uppercase tracking-wider font-mono font-bold">
                               📻 Capter un grincement
                             </button>
-                            <div id="literal-noise-box" class="text-center font-mono text-sm text-[#FFD84D] font-bold py-1.5 border border-dashed border-[#D4A017]/30 rounded bg-black/60 shadow-inner px-2">
+                            <div id="literal-noise-box" class="text-center font-mono text-base text-[#FFD84D] font-bold py-2 border border-dashed border-[#D4A017]/40 rounded-lg bg-black/75 shadow-inner px-2">
                               CLAC — FSHHH — TIC TIC
                             </div>
                           </div>
                         </div>
 
                         <!-- Choose possible translations presets -->
-                        <div class="w-full bg-[#130305] border-[#3d1214] border-2 p-3 rounded-lg mb-4 text-left">
-                          <label class="block text-center font-display text-[#D4A017] mb-2 text-shadow-sm uppercase text-2xs select-none tracking-widest font-semibold">Traductions Possibles</label>
-                          <div id="translator-choices-list" class="grid grid-cols-1 gap-1.5 max-h-[140px] overflow-y-auto pr-1">
+                        <div class="w-full bg-[#130305]/95 border-[#3d1214] border-2 p-3.5 rounded-lg mb-4 text-left">
+                          <label class="block text-center font-display text-[#D4A017] mb-2 text-shadow-sm uppercase text-xs select-none tracking-widest font-bold">Traductions Possibles</label>
+                          <div id="translator-choices-list" class="grid grid-cols-1 gap-2 max-h-[150px] overflow-y-auto pr-1">
                             <!-- Populated with translations -->
                           </div>
                           <!-- Area for custom manual texts -->
-                          <div id="manual-translation-choice-area" class="hidden mt-2.5">
-                            <textarea id="custom-translation-textarea" placeholder="Ex. Je réclame de l'huile tiède..." class="w-full bg-[#150508] border border-[#3d1214] text-[#F6E7C1] font-serif text-2xs p-2 rounded focus:outline-none focus:border-[#FFD84D] h-12 resize-none"></textarea>
+                          <div id="manual-translation-choice-area" class="hidden mt-3">
+                            <textarea id="custom-translation-textarea" placeholder="Ex. Je réclame de l'huile tiède..." class="w-full bg-[#150508] border border-[#3d1214] text-[#F6E7C1] font-serif text-xs p-2.5 rounded-lg focus:outline-none focus:border-[#FFD84D] h-14 resize-none"></textarea>
                           </div>
                         </div>
 
                         <!-- Extra variable ether filter -->
                         <div class="interpretation-gauge w-full flex flex-col gap-1 mb-4 text-left">
-                          <div class="flex justify-between items-center text-[0.6rem] font-mono tracking-widest text-[#D4A017] uppercase">
-                            <span>Fiche de filtrage d'Éther à Galène</span>
+                          <div class="flex justify-between items-center text-xs font-mono tracking-wider text-amber-400 font-bold uppercase mb-1.5">
+                            <span>⚙️ Filtrage d'Éther à Galène</span>
                             <span id="translator-filter-val" class="text-amber-250 font-bold">50% (Standard)</span>
                           </div>
-                          <input id="translator-filter-slider" type="range" min="0" max="100" value="50" class="w-full cursor-pointer accent-[#D94141]" />
+                          <input id="translator-filter-slider" type="range" min="0" max="100" value="50" class="w-full h-2 rounded-lg cursor-pointer accent-[#D94141] bg-stone-900" />
                         </div>
 
                         <!-- Interpretation mode Slider dial -->
-                        <div class="interpretation-gauge w-full flex flex-col gap-1 mb-4 text-left">
-                          <label class="block text-center text-[0.6rem] font-mono tracking-widest text-[#D4A017] uppercase mb-1 text-center w-full">Accordage Acoustique du Récepteur</label>
-                          <div class="slider-labels flex justify-between text-[0.5rem] font-mono text-amber-400 select-none pb-0.5 tracking-wider uppercase font-bold">
+                        <div class="interpretation-gauge w-full flex flex-col gap-1 mb-5 text-left">
+                          <label class="block text-xs font-mono tracking-wider text-amber-400 font-bold uppercase mb-2 text-center w-full">Accordage Acoustique du Récepteur</label>
+                          <div class="slider-labels flex justify-between text-[0.62rem] font-mono text-amber-400 select-none pb-1 tracking-wider uppercase font-bold">
                             <span>⚙️ Rationnel</span>
                             <span>✨ Poétique</span>
                             <span>👁️ Inquiétant</span>
                           </div>
-                          <input id="acoustic-accord-slider" type="range" min="0" max="100" value="50" class="w-full cursor-pointer accent-[#D94141]" />
+                          <input id="acoustic-accord-slider" type="range" min="0" max="100" value="50" class="w-full h-2 rounded-lg cursor-pointer accent-[#D94141] bg-stone-900" style="touch-action: none;" />
                         </div>
 
-                        <button id="btn-launch-translation" class="tactile-heavy-lever w-full py-3.5 text-xs text-center uppercase tracking-widest font-bold">INTERPRÉTER SON CONSTAT</button>
-                        <button class="btn-return-to-menu w-full mt-2.5 bg-black/55 border border-stone-850 text-stone-400 py-1.5 rounded font-mono text-3xs uppercase tracking-widest hover:border-stone-750">Retour au Cabinet</button>
+                        <button id="btn-launch-translation" class="tactile-heavy-lever w-full py-4 text-xs sm:text-sm text-center uppercase tracking-widest font-extrabold shadow-md">INTERPRÉTER SON CONSTAT</button>
+                        <button class="btn-return-to-menu w-full mt-3 bg-black/55 border border-stone-850 text-stone-400 py-2.5 rounded-lg font-mono text-xs uppercase tracking-widest hover:border-stone-700 hover:text-white transition-all">◀ Retour au Cabinet</button>
                       </div>
 
                       <!-- Decoder translation ticket -->
-                      <div id="translator-result-ticket" class="hidden flex flex-col items-center w-full">
+                      <div id="translator-result-ticket" class="hidden flex flex-col items-center w-full animate-fade-in">
                         <div class="vintage-ticket relative max-w-xl">
                           <div class="plate-rivet-corner c-tl scale-75"></div><div class="plate-rivet-corner c-tr scale-75"></div><div class="plate-rivet-corner c-bl scale-75"></div><div class="plate-rivet-corner c-br scale-75"></div>
                           
                           <div class="ticket-header border-b border-dotted border-black/25 pb-3 mb-4 text-center">
-                            <h4 id="trans-ticket-title" class="font-display text-base text-[#D94141] mb-1">ACOUSTIQUE DÉCODÉ</h4>
-                            <p class="text-[0.55rem] font-bold text-stone-600 uppercase">INTERPRÉTATION DU SOUPIR DE LA RELIQUE</p>
+                            <h4 id="trans-ticket-title" class="font-display text-lg text-[#D94141] mb-1">ACOUSTIQUE DÉCODÉ</h4>
+                            <p class="text-[0.62rem] font-bold text-stone-600 uppercase tracking-widest font-mono">INTERPRÉTATION DU SOUPIR DE LA RELIQUE</p>
                           </div>
 
-                          <div class="ticket-body text-[0.65rem] flex flex-col gap-2.5 select-none leading-relaxed text-black/85 text-left">
-                            <div class="border-b border-black/5 pb-1 flex flex-col">
-                              <span class="opacity-70 text-[0.5rem] uppercase font-bold">Objet sonore étudié</span>
+                          <div class="ticket-body text-xs flex flex-col gap-2.5 select-none leading-relaxed text-black/85 text-left">
+                            <div class="border-b border-black/5 pb-1.5 flex flex-col">
+                              <span class="opacity-70 text-[0.68rem] tracking-wider text-stone-500 font-semibold uppercase">Objet sonore étudié</span>
                               <span id="trans-val-relic" class="font-bold text-xs text-[#2c1a1a]">La Licorne Mystique</span>
                             </div>
-                            <div class="border-b border-black/5 pb-1 flex flex-col">
-                              <span class="opacity-70 text-[0.5rem] uppercase font-bold">Canal Jack raccordé</span>
+                            <div class="border-b border-black/5 pb-1.5 flex flex-col">
+                              <span class="opacity-70 text-[0.68rem] tracking-wider text-stone-500 font-semibold uppercase">Canal Jack raccordé</span>
                               <span id="trans-val-jack" class="font-bold text-xs text-[#2c1a1a]">Canal Low</span>
                             </div>
-                            <div class="border-b border-black/5 pb-1 flex flex-col">
-                              <span class="opacity-70 text-[0.5rem] uppercase font-bold">Fréquence captée</span>
+                            <div class="border-b border-black/5 pb-1.5 flex flex-col">
+                              <span class="opacity-70 text-[0.68rem] tracking-wider text-stone-500 font-semibold uppercase">Fréquence captée</span>
                               <span id="trans-val-bruit" class="font-bold text-xs text-[#2c1a1a]">BZZZ</span>
                             </div>
-                            <div class="border-b border-black/5 pb-1 flex flex-col">
-                              <span class="opacity-70 text-[0.5rem] uppercase font-bold">Message décrypté</span>
+                            <div class="border-b border-black/5 pb-1.5 flex flex-col">
+                              <span class="opacity-70 text-[0.68rem] tracking-wider text-stone-500 font-semibold uppercase">Message décrypté</span>
                               <span id="trans-val-recog" class="font-bold text-xs text-[#2c1a1a]">Préfère la sieste</span>
                             </div>
-                            <div class="border-b border-black/5 pb-1 flex flex-col">
-                              <span class="opacity-70 text-[0.5rem] uppercase font-bold">Filtrage d'Éther</span>
+                            <div class="border-b border-black/5 pb-1.5 flex flex-col">
+                              <span class="opacity-70 text-[0.68rem] tracking-wider text-stone-500 font-semibold uppercase">Filtrage d'Éther</span>
                               <span id="trans-val-ether-filter" class="font-bold text-xs text-[#2c1a1a]">50%</span>
                             </div>
-                            <div class="border-b border-black/5 pb-1 flex flex-col">
-                              <span class="opacity-70 text-[0.5rem] uppercase font-bold">Mode de sondage</span>
+                            <div class="border-b border-black/5 pb-1.5 flex flex-col">
+                              <span class="opacity-70 text-[0.68rem] tracking-wider text-stone-500 font-semibold uppercase">Mode de sondage</span>
                               <span id="trans-val-mode" class="font-bold text-xs text-[#2c1a1a]">Poésie Absurde</span>
                             </div>
                             <div class="pb-1 flex flex-col">
-                              <span class="opacity-70 text-[0.5rem] uppercase font-bold">Sensibilité laiton</span>
+                              <span class="opacity-70 text-[0.68rem] tracking-wider text-stone-500 font-semibold uppercase">Sensibilité laiton</span>
                               <span id="trans-val-diagnosis" class="font-bold text-xs text-amber-900 italic">Vibration de nostalgie</span>
                             </div>
                           </div>
 
                           <div class="red-stamp text-[#B91C1C]">TRADUIT</div>
 
-                          <button id="btn-retry-translator" class="tactile-heavy-lever w-full py-3.5 mt-5 text-2xs uppercase tracking-widest font-bold">Capter une autre friture</button>
+                          <button id="btn-retry-translator" class="tactile-heavy-lever w-full py-4 mt-5 text-xs uppercase tracking-widest font-extrabold shadow-md">Capter une autre friture</button>
                         </div>
-                        <button class="btn-return-to-menu w-full mt-3 bg-black/55 border border-stone-850 text-stone-400 py-1.5 rounded font-mono text-3xs uppercase tracking-widest hover:border-stone-750">Retour au Cabinet</button>
+                        <button class="btn-return-to-menu w-full mt-4 bg-black/55 border border-stone-850 text-stone-400 py-2.5 rounded-lg font-mono text-xs uppercase tracking-widest hover:border-stone-700 hover:text-white transition-all">◀ Retour au Cabinet</button>
                       </div>
 
                     </div>
@@ -915,64 +1013,82 @@
                     <div class="metal-heavy-plate-card p-6 relative">
                       <div class="plate-rivet-corner c-tl"></div><div class="plate-rivet-corner c-tr"></div><div class="plate-rivet-corner c-bl"></div><div class="plate-rivet-corner c-br"></div>
                       
+                      <!-- Guidance Stepper -->
+                      <div class="w-full max-w-xl mx-auto mb-6 bg-black/45 border border-amber-500/25 rounded-xl px-4 py-3 flex items-center justify-around text-center select-none shadow-md">
+                        <div class="flex items-center gap-2">
+                          <span class="flex items-center justify-center w-5.5 h-5.5 rounded-full bg-amber-500 text-black text-[11px] font-mono font-bold shadow-[0_0_8px_rgba(245,158,11,0.5)]">1</span>
+                          <span class="text-xs font-mono font-bold text-[#FFD84D]">Cibler relique</span>
+                        </div>
+                        <div class="text-stone-700 text-xs">➔</div>
+                        <div class="flex items-center gap-2">
+                          <span class="flex items-center justify-center w-5.5 h-5.5 rounded-full bg-[#1e070a] border border-amber-500/30 text-amber-500 text-[11px] font-mono font-bold">2</span>
+                          <span class="text-xs font-mono text-stone-300">Catégorie poétique</span>
+                        </div>
+                        <div class="text-stone-700 text-xs">➔</div>
+                        <div class="flex items-center gap-2">
+                          <span class="flex items-center justify-center w-5.5 h-5.5 rounded-full bg-[#1e070a] border border-amber-500/30 text-amber-500 text-[11px] font-mono font-bold">3</span>
+                          <span class="text-xs font-mono text-stone-300">Dépôt</span>
+                        </div>
+                      </div>
+
                       <div class="flex flex-col items-center">
-                        <h3 class="section-title text-[#FFD84D] font-circus text-lg text-center uppercase tracking-widest mb-1">Classification</h3>
-                        <p class="text-xs text-center text-stone-300 italic mb-4">Attribuez des étiquettes de sensibilité poétique à des reliques de la collection.</p>
+                        <h3 class="section-title text-[#FFD84D] font-circus text-xl text-center uppercase tracking-widest mb-1">Classification</h3>
+                        <p class="text-xs text-center text-stone-300 italic mb-5">Attribuez des étiquettes de sensibilité poétique à des reliques de la collection.</p>
                         
                         <div class="w-full text-left mb-4">
-                          <label class="block text-[0.62rem] font-mono tracking-widest text-[#FFD84D] uppercase mb-1.5">Objet du cabinet à cataloguer</label>
-                          <div id="collection-list-grid" class="grid grid-cols-2 md:grid-cols-3 gap-2 max-h-[140px] overflow-y-auto pr-1">
+                          <label class="block text-xs font-mono tracking-wider text-amber-400 font-bold uppercase mb-2">1. Objet du cabinet à cataloguer</label>
+                          <div id="collection-list-grid" class="grid grid-cols-2 md:grid-cols-3 gap-2.5 max-h-[160px] overflow-y-auto pr-1">
                             <!-- Objects lists buttons -->
                           </div>
                         </div>
 
                         <div class="w-full text-left mb-4">
-                          <label class="block text-[0.62rem] font-mono tracking-widest text-[#FFD84D] uppercase mb-1.5">Catégorie poétique désignée</label>
-                          <select id="collection-cat-select" class="w-full h-8 px-2 bg-black border border-stone-850 text-[#F6E7C1] rounded font-mono text-2xs focus:outline-none">
+                          <label class="block text-xs font-mono tracking-wider text-amber-400 font-bold uppercase mb-2">2. Catégorie poétique désignée</label>
+                          <select id="collection-cat-select" class="w-full h-11 px-3 bg-black/95 border border-stone-750 text-stone-100 rounded-lg font-mono text-xs focus:outline-none">
                             <!-- Category categories selections loaded in JS -->
                           </select>
                         </div>
 
                         <!-- OPTIONS D'ENTRÉE UTILISATEUR POUR LA CLASSIFICATION -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 w-full text-left mb-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full text-left mb-4">
                           <div>
-                            <label class="block text-[0.62rem] font-mono tracking-widest text-[#FFD84D] uppercase mb-1.5">Nom de l'objet personnalisé (Optionnel)</label>
-                            <input type="text" id="collection-name-input" placeholder="Laissez vide pour le nom d'origine..." class="w-full h-8 px-3 bg-black border border-stone-850 rounded text-stone-200 font-serif text-2xs focus:outline-none focus:border-[#FFD84D]" />
+                            <label class="block text-xs font-mono tracking-wider text-amber-400 font-bold uppercase mb-2">3. Nom de l'objet personnalisé (Optionnel)</label>
+                            <input type="text" id="collection-name-input" placeholder="Laissez vide pour le nom d'origine..." class="w-full h-11 px-3.5 bg-black/90 border border-stone-750 rounded-lg text-stone-100 font-serif text-xs focus:outline-none focus:border-[#FFD84D]" />
                           </div>
                           <div>
-                            <label class="block text-[0.62rem] font-mono tracking-widest text-[#FFD84D] uppercase mb-1.5">Description d'archiviste personnalisée</label>
-                            <input type="text" id="collection-desc-input" placeholder="Laissez vide pour la description d'origine..." class="w-full h-8 px-3 bg-black border border-stone-850 rounded text-stone-200 font-serif text-2xs focus:outline-none focus:border-[#FFD84D]" />
+                            <label class="block text-xs font-mono tracking-wider text-amber-400 font-bold uppercase mb-2">4. Description d'archiviste personnalisée</label>
+                            <input type="text" id="collection-desc-input" placeholder="Laissez vide pour la description d'origine..." class="w-full h-11 px-3.5 bg-black/90 border border-stone-750 rounded-lg text-stone-100 font-serif text-xs focus:outline-none focus:border-[#FFD84D]" />
                           </div>
                         </div>
 
                         <div class="w-full text-left mb-5">
-                          <div class="flex items-center justify-between mb-1.5">
-                            <label class="block text-[0.62rem] font-mono tracking-widest text-[#FFD84D] uppercase">Motif de classification (Raison secrète)</label>
-                            <button id="btn-suggest-motif" type="button" class="text-[0.6rem] font-mono text-[#FFD84D] underline hover:text-white transition-colors cursor-pointer">Suggérer un motif 🔮</button>
+                          <div class="flex items-center justify-between mb-2">
+                            <label class="block text-xs font-mono tracking-wider text-amber-400 font-bold uppercase">5. Motif de classification (Raison secrète)</label>
+                            <button id="btn-suggest-motif" type="button" class="text-xs font-mono text-[#FFD84D] underline hover:text-white transition-colors cursor-pointer font-bold">Suggérer un motif 🔮</button>
                           </div>
-                          <input type="text" id="collection-motif-input" placeholder="Saisissez une raison absurde ou cliquez sur une suggestion..." class="w-full h-8 px-3 bg-black border border-stone-850 rounded text-stone-200 font-serif text-2xs focus:outline-none focus:border-[#FFD84D] mb-1.5" />
-                          <div id="collection-motif-suggestions-container" class="flex flex-wrap gap-1">
+                          <input type="text" id="collection-motif-input" placeholder="Saisissez une raison absurde ou cliquez sur une suggestion..." class="w-full h-11 px-3.5 bg-black/90 border border-stone-750 rounded-lg text-stone-100 font-serif text-xs focus:outline-none focus:border-[#FFD84D] mb-3" />
+                          <div id="collection-motif-suggestions-container" class="flex flex-wrap gap-1.5">
                             <!-- Helper quick pills generated by code -->
                           </div>
                         </div>
 
-                        <button id="btn-launch-print" class="tactile-heavy-lever w-full py-3.5 text-xs text-center uppercase tracking-widest font-bold">IMPRIMER L'ÉTIQUETTE CERTIFIÉE</button>
+                        <button id="btn-launch-print" class="tactile-heavy-lever w-full py-4 text-xs sm:text-sm text-center uppercase tracking-widest font-extrabold shadow-md">IMPRIMER L'ÉTIQUETTE CERTIFIÉE</button>
 
                         <!-- Peaked dynamic paper sticker that pop stamps -->
                         <div id="collection-output-plate" class="hidden w-full max-w-md mt-5 animate-fade-in relative text-left">
-                          <div class="sticker bg-white border-2 border-stone-300 p-4 text-black text-xs font-mono select-none shadow-md transform rotate-3">
-                            <div id="sticker-obj-id" class="text-3xs font-bold text-gray-400 uppercase">ARTEFACT N°402</div>
-                            <h5 id="sticker-obj-name" class="font-bold text-sm tracking-tight border-b border-black/10 pb-0.5 text-gray-900 mt-1 uppercase">LE CHANTE-BOULON</h5>
-                            <p id="sticker-obj-desc" class="text-3xs text-gray-500 italic leading-snug mt-1.5">Boîte qui chante quand on l'oublie.</p>
+                          <div class="sticker bg-white border-2 border-stone-300 p-5 text-black text-xs font-mono select-none shadow-lg transform rotate-2">
+                            <div id="sticker-obj-id" class="text-[0.62rem] font-bold text-gray-500 uppercase font-mono tracking-wider">ARTEFACT N°402</div>
+                            <h5 id="sticker-obj-name" class="font-bold text-base tracking-tight border-b border-black/15 pb-1 text-gray-900 mt-1 uppercase">LE CHANTE-BOULON</h5>
+                            <p id="sticker-obj-desc" class="text-xs text-gray-600 italic leading-snug mt-2">Boîte qui chante quand on l'oublie.</p>
                             
-                            <div class="border-t border-dashed border-black/10 pt-1.5 mt-2 flex flex-col gap-1 text-[0.6rem]">
+                            <div class="border-t border-dashed border-black/15 pt-2 mt-2.5 flex flex-col gap-1.5 text-xs">
                               <span id="sticker-obj-class" class="font-bold text-pink-700 uppercase">CLASSE : Machines mélancoliques</span>
-                              <span id="sticker-obj-justification" class="text-gray-700">MOTIF : Elle tremble si on l'exclut</span>
+                              <span id="sticker-obj-justification" class="text-gray-800">MOTIF : Elle tremble si on l'exclut</span>
                             </div>
                           </div>
                         </div>
 
-                        <button class="btn-return-to-menu w-full mt-4 bg-black/55 border border-stone-850 text-stone-400 py-1.5 rounded font-mono text-3xs uppercase tracking-widest hover:border-stone-750 font-bold">Retour au Cabinet</button>
+                        <button class="btn-return-to-menu w-full mt-4 bg-black/55 border border-stone-850 text-stone-400 py-2.5 rounded-lg font-mono text-xs uppercase tracking-widest hover:border-stone-700 hover:text-white transition-all font-bold">◀ Retour au Cabinet</button>
                       </div>
 
                     </div>

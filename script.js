@@ -717,7 +717,7 @@ window.addEventListener('DOMContentLoaded', () => {
       optionsContainer.innerHTML = '';
       qData.answers.forEach((ans) => {
         const btn = document.createElement('button');
-        btn.className = 'tactile-heavy-lever w-full text-center py-3 px-4 text-xs tracking-wide cursor-pointer';
+        btn.className = 'tactile-heavy-lever w-full text-center py-3.5 px-4 text-sm tracking-wide cursor-pointer';
         btn.innerText = ans.text;
         
         btn.addEventListener('click', () => {
@@ -855,7 +855,7 @@ window.addEventListener('DOMContentLoaded', () => {
       shuffled.forEach(func => {
         const pill = document.createElement('button');
         pill.type = 'button';
-        pill.className = 'px-2 py-0.5 bg-[#4a0812]/40 border border-[#d4a017]/20 hover:border-[#FFD84D] hover:bg-[#5d040c]/50 text-stone-300 rounded font-serif text-[0.6rem] transition-all cursor-pointer';
+        pill.className = 'px-3 py-1.5 bg-[#4a0812]/50 border border-[#d4a017]/30 hover:border-[#FFD84D] hover:bg-[#5d040c]/60 text-stone-200 rounded-lg font-serif text-sm transition-all cursor-pointer';
         pill.innerText = func;
         pill.addEventListener('click', () => {
           playGearTick();
@@ -883,7 +883,7 @@ window.addEventListener('DOMContentLoaded', () => {
       listGrid.innerHTML = '';
       DATA.inventions.forEach(inv => {
         const item = document.createElement('button');
-        item.className = 'p-3 flex flex-col items-center gap-1.5 justify-center text-center bg-black/55 border-2 border-stone-850 hover:border-[#FFD84D] rounded-xl transition-all cursor-pointer font-serif text-xs';
+        item.className = 'p-3 flex flex-col items-center gap-1.5 justify-center text-center bg-black/55 border-2 border-stone-850 hover:border-[#FFD84D] rounded-xl transition-all cursor-pointer font-serif text-sm';
         item.innerHTML = `<span class="text-2xl">${inv.icon}</span> <span class="leading-tight">${inv.name}</span>`;
         item.addEventListener('click', () => {
           playGearTick();
@@ -1112,11 +1112,11 @@ window.addEventListener('DOMContentLoaded', () => {
       selectedJack = jackCodeName;
       [btnJack1, btnJack2, btnJack3].forEach(btn => {
         if (btn) {
-          btn.className = 'flex-1 bg-stone-900 border border-stone-700 hover:border-[#FFD84D] text-stone-300 rounded font-mono text-[0.55rem] uppercase tracking-wider cursor-pointer transition-all active:scale-95';
+          btn.className = 'flex-1 bg-stone-905 border border-stone-700 hover:border-[#FFD84D] text-stone-300 rounded-lg font-mono text-sm uppercase tracking-wider cursor-pointer transition-all active:scale-95';
         }
       });
       if (selectedBtn) {
-        selectedBtn.className = 'flex-1 bg-[#4a0812] border-2 border-[#d4a017] text-[#FFD84D] rounded font-mono text-[0.55rem] uppercase tracking-wider cursor-pointer transition-all font-bold';
+        selectedBtn.className = 'flex-1 bg-[#4a0812] border-2 border-[#d4a017] text-[#FFD84D] rounded-lg font-mono text-sm uppercase tracking-wider cursor-pointer transition-all font-bold';
       }
 
       // Animate wave columns to show visual link activity
@@ -1188,12 +1188,12 @@ window.addEventListener('DOMContentLoaded', () => {
       choicesList.innerHTML = '';
       DATA.translatorQuotes.slice(0, 7).forEach(quote => {
         const item = document.createElement('button');
-        item.className = 'w-full text-left text-xs p-3 font-serif rounded-lg border-2 border-stone-850 bg-black/60 text-stone-200 cursor-pointer hover:border-[#FFD84D] transition-all';
+        item.className = 'w-full text-left text-sm p-3.5 font-serif rounded-lg border-2 border-stone-850 bg-black/60 text-stone-200 cursor-pointer hover:border-[#FFD84D] transition-all';
         item.innerText = `« ${quote} »`;
         item.addEventListener('click', () => {
           playGearTick();
-          choicesList.querySelectorAll('button').forEach(b => b.className = 'w-full text-left text-xs p-3 font-serif rounded-lg border-2 border-stone-850 bg-black/60 text-stone-200 cursor-pointer hover:border-[#FFD84D] transition-all');
-          item.className = 'w-full text-left text-xs p-3 font-serif rounded-lg border-2 border-[#FFD84D] bg-gradient-to-b from-[#D94141] to-[#800000] text-white cursor-pointer hover:border-[#FFD84D] transition-all font-bold';
+          choicesList.querySelectorAll('button').forEach(b => b.className = 'w-full text-left text-sm p-3.5 font-serif rounded-lg border-2 border-stone-850 bg-black/60 text-stone-200 cursor-pointer hover:border-[#FFD84D] transition-all');
+          item.className = 'w-full text-left text-sm p-3.5 font-serif rounded-lg border-2 border-[#FFD84D] bg-gradient-to-b from-[#D94141] to-[#800000] text-white cursor-pointer hover:border-[#FFD84D] transition-all font-bold';
           chosenTranslation = quote;
           manualTextInput.classList.add('hidden');
         });
@@ -1202,12 +1202,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
       // Custom button for manual sémantique entry
       const customBtn = document.createElement('button');
-      customBtn.className = 'w-full text-left text-xs p-3 font-serif rounded-lg border-2 border-stone-850 bg-black/60 text-stone-200 cursor-pointer hover:border-[#FFD84D] transition-all';
+      customBtn.className = 'w-full text-left text-sm p-3.5 font-serif rounded-lg border-2 border-stone-850 bg-black/60 text-stone-200 cursor-pointer hover:border-[#FFD84D] transition-all';
       customBtn.innerText = '✏️ Autre... (Traduction libre)';
       customBtn.addEventListener('click', () => {
         playGearTick();
-        choicesList.querySelectorAll('button').forEach(b => b.className = 'w-full text-left text-xs p-3 font-serif rounded-lg border-2 border-stone-850 bg-black/60 text-stone-200 cursor-pointer hover:border-[#FFD84D] transition-all');
-        customBtn.className = 'w-full text-left text-xs p-3 font-serif rounded-lg border-2 border-[#FFD84D] bg-gradient-to-b from-[#D94141] to-[#800000] text-white cursor-pointer hover:border-[#FFD84D] transition-all font-bold';
+        choicesList.querySelectorAll('button').forEach(b => b.className = 'w-full text-left text-sm p-3.5 font-serif rounded-lg border-2 border-stone-850 bg-black/60 text-stone-200 cursor-pointer hover:border-[#FFD84D] transition-all');
+        customBtn.className = 'w-full text-left text-sm p-3.5 font-serif rounded-lg border-2 border-[#FFD84D] bg-gradient-to-b from-[#D94141] to-[#800000] text-white cursor-pointer hover:border-[#FFD84D] transition-all font-bold';
         chosenTranslation = 'custom';
         manualTextInput.classList.remove('hidden');
       });
@@ -1312,7 +1312,7 @@ window.addEventListener('DOMContentLoaded', () => {
       shuffled.forEach(motif => {
         const pill = document.createElement('button');
         pill.type = 'button';
-        pill.className = 'px-2 py-0.5 bg-[#4a0812]/40 border border-[#d4a017]/20 hover:border-[#FFD84D] hover:bg-[#5d040c]/50 text-stone-300 rounded font-serif text-[0.6rem] transition-all cursor-pointer';
+        pill.className = 'px-3 py-1.5 bg-[#4a0812]/50 border border-[#d4a017]/30 hover:border-[#FFD84D] hover:bg-[#5d040c]/60 text-stone-200 rounded-lg font-serif text-sm transition-all cursor-pointer';
         pill.innerText = motif;
         pill.addEventListener('click', () => {
           playGearTick();
@@ -1338,8 +1338,8 @@ window.addEventListener('DOMContentLoaded', () => {
       listGrid.innerHTML = '';
       DATA.classifierObjects.forEach(obj => {
         const item = document.createElement('button');
-        item.className = 'p-3 flex flex-col justify-center text-center items-center bg-black/55 border-2 border-stone-850 hover:border-[#FFD84D] rounded-xl transition-all cursor-pointer font-serif text-xs';
-        item.innerHTML = `<span class="text-xl">📦</span> <span class="leading-tight font-bold">${obj.name}</span> <span class="text-[0.62rem] text-stone-400 font-sans italic leading-none mt-1 line-clamp-2">${obj.desc}</span>`;
+        item.className = 'p-3 flex flex-col justify-center text-center items-center bg-black/55 border-2 border-stone-850 hover:border-[#FFD84D] rounded-xl transition-all cursor-pointer font-serif text-sm';
+        item.innerHTML = `<span class="text-xl">📦</span> <span class="leading-tight font-bold">${obj.name}</span> <span class="text-xs text-stone-400 font-sans italic leading-tight mt-1 line-clamp-2">${obj.desc}</span>`;
         item.addEventListener('click', () => {
           playGearTick();
           listGrid.querySelectorAll('button').forEach(b => b.classList.remove('border-[#FFD84D]', 'bg-black/85'));

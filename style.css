@@ -1,0 +1,1030 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Grenze+Gotisch:wght@400;700&family=Pirata+One&family=Sancreek&family=Rye&display=swap');
+
+:root {
+  --color-black: #101010;
+  --color-ivory: #F6E7C1;
+  --color-gold: #FFD84D;
+  --color-brass: #D4A017;
+  --color-turquoise: #14D8D8;
+  --color-fuchsia: #FF2E9A;
+  --color-velvet: #D94141;
+  --color-violet: #800000;
+  --color-blue: #167BFF;
+  --color-orange: #FF8A00;
+  --color-green: #19C37D;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "Space Mono", monospace;
+  --font-display: "Sancreek", "Pirata One", cursive;
+  --font-gothic: "Grenze Gotisch", serif;
+  --font-circus: "Sancreek", cursive;
+  --font-rye: "Rye", serif;
+}
+
+/* Base style adaptation */
+body {
+  background-color: #0d0405;
+  color: #F6E7C1;
+  font-family: "Playfair Display", serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* GIGANTIC INDUSTRIAL COAL FORGE AND RIVETED WALL PANELS BACKGROUND */
+.wood-panel {
+  background-color: #070102;
+  background-image: 
+    radial-gradient(circle at 50% 120%, rgba(139, 24, 30, 0.46) 0%, rgba(20, 4, 6, 0.98) 75%),
+    radial-gradient(ellipse at center, transparent 30%, rgba(0, 0, 0, 1) 100%),
+    repeating-linear-gradient(90deg, transparent 0px, transparent 150px, rgba(0,0,0,0.8) 150px, rgba(0,0,0,0.8) 152px, rgba(255,255,255,0.02) 152px, rgba(255,255,255,0.02) 153px),
+    repeating-linear-gradient(0deg, transparent 0px, transparent 180px, rgba(0,0,0,0.85) 180px, rgba(0,0,0,0.85) 182px, rgba(255,255,255,0.02) 182px, rgba(255,255,255,0.02) 183px),
+    url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='iron-pitting'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.08 0.15' numOctaves='3'/%3E%3CfeColorMatrix type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.2 0'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23iron-pitting)' opacity='0.33'/%3E%3C/svg%3E");
+  box-shadow: 
+    inset 0 0 130px rgba(0,0,0,1),
+    inset 0 0 40px rgba(112, 16, 20, 0.1);
+}
+
+/* Bulb animations */
+.bulb {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.5);
+  transition: all 0.3s ease;
+}
+
+.bulb-gold { animation: flash-bulb-gold 0.5s infinite alternate; }
+.bulb-red { animation: flash-bulb-red 0.6s infinite alternate; }
+.bulb-warm { animation: flash-bulb-warm 0.7s infinite alternate; }
+
+@keyframes flash-bulb-gold {
+  0%, 100% { background-color: #FFD84D; box-shadow: 0 0 14px 5px #FFD84D, inset 0 0 4px white; }
+  50% { background-color: #664400; box-shadow: 0 0 3px 0px #FFD84D; }
+}
+
+@keyframes flash-bulb-red {
+  0%, 100% { background-color: #E63946; box-shadow: 0 0 14px 5px #E63946, inset 0 0 4px white; }
+  50% { background-color: #440000; box-shadow: 0 0 3px 0px #E63946; }
+}
+
+@keyframes flash-bulb-warm {
+  0%, 100% { background-color: #FDF0D5; box-shadow: 0 0 14px 5px #FDF0D5, inset 0 0 4px white; }
+  50% { background-color: #554433; box-shadow: 0 0 3px 0px #FDF0D5; }
+}
+
+/* Console CRT and layout styling */
+.main-console-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  background-color: #200d07;
+  background-image: 
+    radial-gradient(circle at center, rgba(30, 10, 5, 0.3) 0%, rgba(10, 1, 0, 0.95) 100%),
+    url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3'/%3E%3CfeColorMatrix type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.15 0'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.35'/%3E%3C/svg%3E") !important;
+  background-repeat: repeat;
+  background-size: 320px;
+  border: 14px solid #331109;
+  border-radius: 24px;
+  box-shadow: 
+    inset 0 0 100px rgba(0,0,0,0.98),
+    inset 0 0 25px rgba(0,0,0,0.95),
+    0 25px 70px rgba(0,0,0,0.98);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Stripes background for carnival authentic spirit */
+.carnival-stripes-bg {
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(45deg, #D94141, #D94141 40px, #bd2c2c 40px, #bd2c2c 80px);
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+/* CRT style scanner overlay */
+.crt-lines {
+  display: none !important;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(18,16,16,0) 50%, rgba(0,0,0,0.22) 50%), linear-gradient(90deg, rgba(255,0,0,0.05), rgba(0,255,0,0.02), rgba(0,0,255,0.05));
+  background-size: 100% 4px, 3px 100%;
+  pointer-events: none;
+  z-index: 21;
+}
+
+/* Boiler bubble bubbles */
+.boiler-glass {
+  height: 120px;
+  width: 44px;
+  background: rgba(0,0,0,0.4);
+  border: 3px solid #3d0205;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.boiler-liquid {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #14D8D8;
+  transition: height 0.4s ease, background 0.4s ease;
+  box-shadow: 0 0 20px rgba(20, 216, 216, 0.4);
+}
+
+.bubble {
+  position: absolute;
+  background: rgba(255,255,255,0.45);
+  border-radius: 50%;
+  bottom: 0;
+  animation: bubble-up 2s infinite ease-out;
+}
+
+.b1 { width: 4px; height: 4px; left: 22%; animation-delay: 0s; }
+.b2 { width: 7px; height: 7px; left: 48%; animation-delay: 0.6s; }
+.b3 { width: 5px; height: 5px; left: 74%; animation-delay: 1.2s; }
+
+@keyframes bubble-up {
+  0% { transform: translateY(0); opacity: 0; }
+  15% { opacity: 0.8; }
+  100% { transform: translateY(-110px); opacity: 0; }
+}
+
+/* Radar Display */
+.radar-display {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #00FFFF;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  background: rgba(0, 5, 20, 0.6);
+}
+
+.radar-circle {
+  position: absolute;
+  inset: 10px;
+  border: 1px dashed rgba(0, 255, 255, 0.25);
+  border-radius: 50%;
+}
+
+.radar-scan {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background: linear-gradient(45deg, rgba(0, 255, 255, 0.45), transparent);
+  top: 0;
+  left: 50%;
+  transform-origin: bottom left;
+  animation: radar-sweep 2.4s linear infinite;
+}
+
+@keyframes radar-sweep {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Vintage custom Ticket styling */
+.vintage-ticket {
+  background: #F6E7C1;
+  color: #101010;
+  padding: 2.2rem 1.6rem;
+  border: 8px double #2c1a1a;
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  font-family: "Playfair Display", serif;
+  box-shadow: 0 12px 45px rgba(0,0,0,0.85);
+  box-sizing: border-box;
+  background-image: 
+    radial-gradient(circle at 0 0, transparent 15px, #F6E7C1 15px),
+    radial-gradient(circle at 100% 0, transparent 15px, #F6E7C1 15px),
+    radial-gradient(circle at 0 100%, transparent 15px, #F6E7C1 15px),
+    radial-gradient(circle at 100% 100%, transparent 15px, #F6E7C1 15px);
+}
+
+.red-stamp {
+  position: absolute;
+  bottom: 90px;
+  right: 25px;
+  transform: rotate(-14deg);
+  border: 4px double #b91c1c;
+  color: #b91c1c;
+  padding: 8px 18px;
+  font-family: "Pirata One", cursive;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  pointer-events: none;
+  opacity: 0.85;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 5px rgba(185, 28, 28, 0.2);
+  animation: stamp-pop 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes stamp-pop {
+  from { transform: scale(3.5) rotate(15deg); opacity: 0; }
+  to { transform: scale(1) rotate(-14deg); opacity: 0.85; }
+}
+
+/* Magnets lever/needle widget */
+.magnet-needle-path {
+  width: 6px;
+  height: 140px;
+  background: rgba(255,255,255,0.08);
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.magnet-needle {
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  width: 22px;
+  height: 4px;
+  background: #14D8D8;
+  box-shadow: 0 0 12px #14D8D8;
+  transform-origin: 11px 2px;
+  transition: top 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Steampunk document redact paper styling (Archive part) */
+.document-view {
+  background: #e0d8c0;
+  color: #2c1a1a;
+  padding: 2.2rem;
+  border: 1px solid #999;
+  box-shadow: 2px 5px 20px rgba(0,0,0,0.5), inset 0 0 60px rgba(0,0,0,0.06);
+  font-family: "Playfair Display", serif;
+  line-height: 1.8;
+  text-align: left;
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  background-image: 
+    url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+.redact {
+  display: inline-block;
+  background: #111;
+  color: transparent;
+  padding: 0px 6px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  user-select: none;
+  min-width: 45px;
+  vertical-align: middle;
+  margin: 0 2px;
+}
+
+.redact.revealed {
+  background: transparent;
+  color: #5c1818;
+  font-weight: bold;
+  border-bottom: 2px solid rgba(139, 0, 0, 0.45);
+}
+
+.redact:not(.revealed):hover {
+  background: #333;
+  box-shadow: 0 0 6px #FFD84D;
+}
+
+/* Custom range input adjustments */
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  background: #000;
+  border: 1px solid #D4A017;
+  border-radius: 4px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 18px;
+  width: 18px;
+  background: radial-gradient(circle at 30% 30%, #FFD84D, #D4A017);
+  border: 2px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px;
+  box-shadow: 0 0 8px #FFD84D;
+}
+
+/* Steampunk sticker tag popping animation */
+.sticker {
+  background: #fff;
+  color: #000;
+  padding: 10px;
+  border: 2px solid #ddd;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  font-family: "Space Mono", monospace;
+  font-size: 0.65rem;
+  transform: rotate(5deg);
+  animation: stamp-pop-sticker 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes stamp-pop-sticker {
+  from { transform: scale(2.5) rotate(22deg); opacity: 0; }
+  to { transform: scale(1) rotate(5deg); opacity: 1; }
+}
+
+/* Steampunk heavy shaking */
+.animate-shake {
+  animation: shake 0.25s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes shake {
+  10%, 90% { transform: translate3d(-1px, 0, 0); }
+  20%, 80% { transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+  40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+
+
+
+/* Steampunk rivet positioning design details */
+.rivet {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #FFD84D, #D4A017);
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+  position: absolute;
+  z-index: 45;
+}
+
+.rivet-mini {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #D4A017;
+  position: absolute;
+}
+.rivet-mini.top-l { top: 4px; left: 4px; }
+.rivet-mini.top-r { top: 4px; right: 4px; }
+.rivet-mini.bottom-l { bottom: 4px; left: 4px; }
+.rivet-mini.bottom-r { bottom: 4px; right: 4px; }
+
+/* Custom sound bars animation (Translator Screen) */
+.wave-bar {
+  width: 6px;
+  height: 20px;
+  background: #FFD84D;
+  animation: wave-motion 0.7s infinite alternate ease-in-out;
+}
+
+@keyframes wave-motion {
+  from { height: 10px; }
+  to { height: 50px; }
+}
+
+.wave-bar:nth-child(2n) { animation-delay: 0.15s; }
+.wave-bar:nth-child(3n) { animation-delay: 0.25s; }
+.wave-bar:nth-child(4n) { animation-delay: 0.35s; }
+.wave-bar:nth-child(5n) { animation-delay: 0.45s; }
+
+/* ==========================================================================
+   CARNIVAL & HAND-PAINTED CIRCUS REVAMP STYLES
+   ========================================================================== */
+
+/* Hum vibrating machine effect */
+@keyframes hum-shudder {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  20% { transform: translate(-0.4px, 0.4px) rotate(-0.1deg); }
+  45% { transform: translate(0.4px, -0.4px) rotate(0.1deg); }
+  65% { transform: translate(-0.4px, -0.4px) rotate(0deg); }
+  85% { transform: translate(0.4px, 0.4px) rotate(-0.1deg); }
+}
+
+.machine-shudder {
+  animation: hum-shudder 4s infinite ease-in-out;
+}
+
+/* Incandescent unstable fluorescent filar hum flickering */
+@keyframes bulb-unstable {
+  0%, 100% { opacity: 1; filter: brightness(1.2) drop-shadow(0 0 12px #FFD84D); }
+  15% { opacity: 0.95; filter: brightness(1); }
+  16% { opacity: 0.4; filter: brightness(0.5); }
+  18% { opacity: 0.98; filter: brightness(1.1); }
+  40% { opacity: 1; }
+  85% { opacity: 1; }
+  86% { opacity: 0.6; filter: brightness(0.7); }
+  88% { opacity: 0.95; filter: brightness(1); }
+}
+
+.bulb-vintage-glow {
+  animation: bulb-unstable 6s infinite ease-in-out;
+}
+
+/* Let's styled antique texts across the machine */
+p, label, span:not(.font-mono), div:not(.font-mono):not(.game-content) {
+  font-family: "Playfair Display", "Grenze Gotisch", serif;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+strong {
+  font-family: "Rye", "Playfair Display", serif;
+  color: #FFD84D;
+}
+
+/* Hand-painted circus drop-carved wooden lettering shadings */
+.main-title {
+  font-family: "Sancreek", "Pirata One", cursive !important;
+  color: #FFD84D !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.12em !important;
+  text-shadow: 
+    -2px -2px 0 #5d040c,  
+     2px -2px 0 #5d040c,
+    -2px  2px 0 #5d040c,
+     2px  2px 0 #5d040c,
+     4px  4px 0 #2c0205,
+     6px  6px 14px rgba(0,0,0,0.95) !important;
+}
+
+.section-title {
+  font-family: "Sancreek", "Pirata One", cursive !important;
+  color: #FFD84D !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  text-shadow: 
+    -1px -1px 0 #5d040c,  
+     1px -1px 0 #5d040c,
+    -1px  1px 0 #5d040c,
+     1px  1px 0 #5d040c,
+     3px  3px 0 #2c0205,
+     4px  4px 8px rgba(0,0,0,0.9) !important;
+}
+
+.step-title {
+  font-family: "Rye", serif !important;
+  color: #FFD84D !important;
+  letter-spacing: 0.12em !important;
+  text-shadow: 1px 2px 0px #3d0205 !important;
+}
+
+/* Tactile bouncy 3D spring buttons resembling heavy circus booths controllers */
+.btn-brass {
+  font-family: "Sancreek", "Pirata One", cursive !important;
+  color: #FFF4D0 !important;
+  background-color: #8a0c16 !important;
+  background-image: linear-gradient(135deg, #a31420 0%, #63050c 100%) !important;
+  border: 4px solid #3d0205 !important;
+  border-radius: 8px !important;
+  text-shadow: 2px 2px 0px #3c0205 !important;
+  box-shadow: 
+    0px 6px 0px #420207, 
+    0px 10px 18px rgba(0,0,0,0.75),
+    inset 0 0 10px rgba(255, 216, 77, 0.25) !important;
+  transition: transform 0.1s ease-out, box-shadow 0.1s ease-out !important;
+}
+
+.btn-brass:hover {
+  background-color: #a31420 !important;
+  background-image: linear-gradient(135deg, #b91c2c 0%, #80050f 100%) !important;
+  border-color: #FFD84D !important;
+  box-shadow: 
+    0px 6px 0px #420207, 
+    0px 12px 22px rgba(0,0,0,0.85),
+    inset 0 0 15px rgba(255, 216, 77, 0.45) !important;
+  transform: translateY(-2px);
+}
+
+.btn-brass:active {
+  box-shadow: 
+    0px 2px 0px #420207, 
+    0px 4px 8px rgba(0,0,0,0.85),
+    inset 0 0 5px rgba(255, 216, 77, 0.1) !important;
+  transform: translateY(4px) !important;
+}
+
+/* Smalls and mini buttons */
+.btn-brass-sm {
+  font-family: "Rye", serif !important;
+  color: #101010 !important;
+  background-color: #FFD84D !important;
+  background-image: linear-gradient(135deg, #FFD84D 0%, #D4A017 100%) !important;
+  border: 2px solid #5d040c !important;
+  border-radius: 6px !important;
+  box-shadow: 
+    0px 3px 0px #800000, 
+    0px 5px 10px rgba(0,0,0,0.45) !important;
+  transition: transform 0.1s ease-out, box-shadow 0.1s ease-out !important;
+}
+
+.btn-brass-sm:hover {
+  background-image: linear-gradient(135deg, #ffe071 0%, #e6af23 100%) !important;
+  box-shadow: 
+    0px 4px 0px #800000, 
+    0px 7px 12px rgba(0,0,0,0.55) !important;
+  transform: translateY(-1px) !important;
+}
+
+.btn-brass-sm:active {
+  transform: translateY(2px) !important;
+  box-shadow: 
+    0px 1px 0px #800000, 
+    0px 2px 4px rgba(0,0,0,0.55) !important;
+}
+
+/* SKEUOMORPHIC HEAVY CAST-BRONZE KEY CONSOLE BUTTON */
+.menu-btn {
+  font-family: "Playfair Display", serif !important;
+  background-color: #3b171a !important;
+  background-image: 
+    radial-gradient(circle at 50% 10%, #6e272c 0%, #1e0608 100%),
+    repeating-linear-gradient(rgba(255,160,0,0.02) 0px, rgba(255,160,0,0.02) 1px, transparent 1px, transparent 4px) !important;
+  border-top: 4px solid #ebd185 !important;
+  border-left: 3px solid #ebd185 !important;
+  border-right: 4px solid #1a0406 !important;
+  border-bottom: 5px solid #1a0406 !important;
+  box-shadow: 
+    0px 10px 24px rgba(0,0,0,0.95),
+    inset 0px 2px 4px rgba(255,255,255,0.15),
+    inset 0px -4px 10px rgba(0,0,0,0.7) !important;
+  border-radius: 10px !important;
+  transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.25) !important;
+}
+
+.menu-btn h4 {
+  font-family: "Sancreek", cursive !important;
+  letter-spacing: 0.05em !important;
+}
+
+.menu-btn:hover {
+  border-top-color: #ffffff !important;
+  border-left-color: #ffffff !important;
+  border-right-color: #ffe899 !important;
+  border-bottom-color: #ffe899 !important;
+  box-shadow: 
+    0px 16px 35px rgba(255, 216, 77, 0.32),
+    inset 0px 2px 8px rgba(255,255,255,0.3),
+    inset 0px -2px 12px rgba(0,0,0,0.5) !important;
+  background-color: #522024 !important;
+  background-image: 
+    radial-gradient(circle at 50% 10%, #8c3b42 0%, #29080b 100%),
+    repeating-linear-gradient(rgba(255,160,0,0.04) 0px, rgba(255,160,0,0.04) 1px, transparent 1px, transparent 4px) !important;
+  transform: translateY(-4px) scale(1.03) !important;
+}
+
+.menu-btn:active {
+  border-top: 4px solid #1a0406 !important;
+  border-left: 3px solid #1a0406 !important;
+  border-right: 4px solid #ebd185 !important;
+  border-bottom: 5px solid #ebd185 !important;
+  box-shadow: 
+    0px 2px 6px rgba(0,0,0,0.8),
+    inset 0px 4px 12px rgba(0,0,0,1) !important;
+  transform: translateY(3px) scale(0.98) !important;
+}
+
+/* SKEUOMORPHIC OBJECT CARD SLOT (Deep recessed bronze slots for selections) */
+.obj-card {
+  position: relative !important;
+  background-color: #17070a !important;
+  background-image: 
+    radial-gradient(circle at center, #2e0f14 0%, #0d0103 100%),
+    linear-gradient(to bottom, rgba(255,255,255,0.03) 0%, transparent 100%) !important;
+  border: 4px solid #451b20 !important;
+  border-radius: 12px !important;
+  box-shadow: 
+    inset 0 4px 12px rgba(0,0,0,0.95),
+    inset 0 -1px 3px rgba(255,255,255,0.06),
+    0 8px 16px rgba(0,0,0,0.85) !important;
+  transition: all 0.22s cubic-bezier(0.175, 0.885, 0.32, 1.25) !important;
+}
+
+.obj-card::before {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  border: 1.5px dashed rgba(255, 216, 77, 0.15);
+  border-radius: 8px;
+  pointer-events: none;
+  transition: all 0.25s ease;
+}
+
+.obj-card:hover {
+  border-color: #d4a017 !important;
+  box-shadow: 
+    inset 0 4px 12px rgba(0,0,0,0.9),
+    0 12px 24px rgba(212, 160, 23, 0.22) !important;
+  transform: translateY(-2px) !important;
+}
+
+.obj-card.active-selected {
+  background-color: #9c1d24 !important;
+  background-image: 
+    radial-gradient(circle at center, #d94141 0%, #440307 100%),
+    linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, transparent 80%) !important;
+  border: 4px solid #ffd84d !important;
+  box-shadow: 
+    0 0 20px rgba(255, 216, 77, 0.5),
+    inset 0 2px 6px rgba(255,255,255,0.35),
+    inset 0 -5px 15px rgba(0,0,0,0.8),
+    0 14px 28px rgba(0,0,0,0.95) !important;
+  transform: scale(1.05) translateY(-3px) !important;
+}
+
+.obj-card.active-selected::before {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Interactive elements inputs stylings */
+input[type=text] {
+  font-family: "Space Mono", monospace !important;
+  background: #110204 !important;
+  color: #FFD84D !important;
+  border: 3px solid #4a191d !important;
+  box-shadow: 
+    inset 0 4px 10px rgba(0,0,0,1),
+    0 1px 2px rgba(255,255,255,0.05) !important;
+}
+
+input[type=text]:focus {
+  border-color: #FFD84D !important;
+  box-shadow: 
+    inset 0 4px 10px rgba(0,0,0,1), 
+    0px 0px 12px rgba(255, 216, 77, 0.4) !important;
+}
+
+.repeating-stripes-burgundy {
+  background-image: repeating-linear-gradient(
+    90deg,
+    #5d040c,
+    #5d040c 12px,
+    #3c0205 12px,
+    #3c0205 24px
+  );
+}
+
+/* ==========================================================================
+   AUTHENTIC FLAT CARNIVAL PAINTED WOOD-PANEL FRESCO DESIGN SYSTEM
+   ========================================================================== */
+
+/* Realistic 3D Steampunk Metal Background styling using procedural noise asset */
+.steampunk-metal-bg {
+  background-image: 
+    radial-gradient(ellipse at center, rgba(38, 16, 17, 0.4) 0%, rgba(5, 1, 2, 0.99) 100%),
+    url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3'/%3E%3CfeColorMatrix type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.15 0'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.3'/%3E%3C/svg%3E") !important;
+  background-repeat: repeat !important;
+  background-size: auto !important;
+}
+
+/* THE MONSTROUS 19TH CENTURY CAST-IRON CHAMBER CARCASS */
+.heavy-machine-carcass {
+  position: relative;
+  background-color: #120305 !important;
+  background-image: 
+    radial-gradient(circle at 50% 10%, #2f0a0d 0%, #060002 100%),
+    repeating-linear-gradient(45deg, rgba(0,0,0,0.2) 0px, rgba(0,0,0,0.2) 10px, transparent 10px, transparent 20px) !important;
+  border: 14px solid #1a0406 !important;
+  border-top-color: #2e0d10 !important;
+  border-left-color: #240a0c !important;
+  border-bottom-color: #0b0102 !important;
+  border-right-color: #0b0102 !important;
+  border-radius: 40px !important;
+  box-shadow: 
+    0px 35px 80px rgba(0,0,0,1),
+    inset 0px 0px 60px rgba(0,0,0,1),
+    inset 0px 4px 10px rgba(255,255,255,0.06) !important;
+  overflow: visible !important;
+}
+
+/* Panels with high-friction copper alignment welds */
+.metal-fresco-arched-panel {
+  position: relative;
+  background-color: #100305;
+  background-image: 
+    radial-gradient(ellipse at center, rgba(38, 16, 17, 0.4) 0%, rgba(5, 1, 2, 0.99) 100%),
+    url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3'/%3E%3CfeColorMatrix type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.15 0'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.3'/%3E%3C/svg%3E") !important;
+  background-repeat: repeat;
+  background-size: 320px;
+  border-radius: 6px !important;
+  box-shadow: 
+    inset 0 0 60px rgba(0,0,0,1),
+    inset 0 0 25px rgba(0, 0, 0, 1),
+    0px 15px 40px rgba(0,0,0,1);
+  border: 10px solid #220b0d;
+  border-right-color: #120305;
+  border-bottom-color: #120305;
+  overflow: visible !important;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Internal rough thick copper/gold engraved lining weld marks */
+.metal-fresco-arched-panel::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 3px dashed rgba(212, 160, 23, 0.35);
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Distressed soot and grease vignette on panels */
+.metal-fresco-arched-panel-lacquer {
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(circle at 50% 20%, transparent 20%, rgba(5,1,1,1) 120%),
+    linear-gradient(to bottom, transparent 20%, rgba(10,1,2,0.98) 100%);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 9;
+}
+
+/* Micro metal weathering scratches overlay */
+.metal-weathering-scratches {
+  position: absolute;
+  inset: 0;
+  opacity: 0.18;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='150' height='150' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 10 L25 18 L20 40 L45 35 M80 20 L65 35 L75 52 L60 81' stroke='%23ffffff' stroke-width='0.7' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  z-index: 8;
+}
+
+/* Flat hand-painted wood fresco panels */
+.wood-fresco-arched-panel {
+  position: relative;
+  background-color: #3a1215;
+  background-image: 
+    radial-gradient(circle at center, #4d1217 0%, #150205 110%),
+    url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='wood-patina'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.02 0.3' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23wood-patina)' opacity='0.28'/%3E%3C/svg%3E");
+  border-radius: 120px 120px 20px 20px;
+  box-shadow: inset 0 0 45px rgba(0,0,0,0.95), 0px 10px 30px rgba(0,0,0,0.8);
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Internal hand-painted gold lining pattern */
+.wood-fresco-arched-panel::before {
+  content: '';
+  position: absolute;
+  inset: 10px;
+  border: 1px solid rgba(138, 12, 22, 0.45);
+  border-radius: 110px 110px 14px 14px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Authentic physical distressed aging varnish layer */
+.wood-fresco-arched-panel-lacquer {
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(circle at center, transparent 40%, rgba(15,3,4,0.95) 105%),
+    linear-gradient(to bottom, transparent 30%, rgba(20,4,5,0.85) 100%);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 9;
+}
+
+/* Micro wood-crackles for distressed texture feel */
+.wood-fresco-crackles {
+  position: absolute;
+  inset: 0;
+  opacity: 0.12;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='150' height='150' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 10 L20 15 L25 35 L30 40 L45 35 L55 58 L50 80 M80 10 L70 30 L75 52 L60 68 L68 90' stroke='%23ffffff' stroke-width='0.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  z-index: 8;
+}
+
+/* Flat hand-painted wood card option blocks */
+.wood-fresco-card {
+  position: relative;
+  background-color: #300c0f;
+  background-image: 
+    radial-gradient(circle at center, #420f12 0%, #170406 100%),
+    url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='tiny-patina'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.05 0.5' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23tiny-patina)' opacity='0.22'/%3E%3C/svg%3E");
+  border-radius: 12px;
+  box-shadow: inset 0 0 24px rgba(0,0,0,0.9), 0px 6px 16px rgba(0,0,0,0.7);
+  overflow: hidden;
+  border: 1px solid rgba(138, 12, 22, 0.35);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wood-fresco-card::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1.5px solid rgba(138, 12, 22, 0.28);
+  border-radius: 8px;
+  pointer-events: none;
+  z-index: 6;
+}
+
+.wood-fresco-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 40%, rgba(10,2,3,0.85) 100%);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* Hammered 3D Heavy Iron Boiler Plate Card with corner brass rivets */
+.metal-heavy-plate-card {
+  position: relative;
+  background-color: #140406;
+  background-image: 
+    radial-gradient(ellipse at center, #2e0d11 0%, #080002 100%),
+    repeating-linear-gradient(45deg, rgba(200, 50, 60, 0.05) 0px, rgba(200, 50, 60, 0.05) 20px, transparent 20px, transparent 40px) !important;
+  border: 10px solid #28080c !important;
+  border-radius: 20px !important;
+  box-shadow: 
+    inset 0 0 45px rgba(0,0,0,0.99),
+    inset 0 4px 8px rgba(255,255,255,0.08),
+    0px 24px 60px rgba(0,0,0,1) !important;
+  overflow: visible !important;
+  transition: all 0.3s ease;
+}
+
+/* Gold/Brass border overlay inside heavy plate card with 3D shadow frame */
+.metal-heavy-plate-card::before {
+  content: '';
+  position: absolute;
+  inset: 12px;
+  border: 4px double #d4a017;
+  border-radius: 12px;
+  box-shadow: 
+    inset 0 0 18px rgba(0,0,0,0.95),
+    0 0 8px rgba(212, 160, 23, 0.2);
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Stained vintage memo parchment styled sheet */
+.parchment-sheet-card {
+  position: relative;
+  background-color: #ebdca2 !important;
+  color: #140502 !important;
+  border: 10px double #361f0e !important;
+  border-radius: 8px !important;
+  box-shadow: 
+    0px 18px 45px rgba(0,0,0,0.95),
+    inset 0 0 60px rgba(100,60,20,0.3) !important;
+  background-image: 
+    radial-gradient(ellipse at center, transparent 30%, rgba(60, 35, 12, 0.25) 100%),
+    url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise-parch'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.08 0.12' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise-parch)' opacity='0.08'/%3E%3C/svg%3E") !important;
+  transition: all 0.3s ease;
+}
+
+/* Corner screw decorations on the heavy plate card */
+.plate-rivet-corner {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: radial-gradient(circle at 30% 30%, #eacb6c, #916812);
+  border: 1px solid #110204;
+  border-radius: 50%;
+  box-shadow: inset 0 1px 1px white, 0 2px 2px rgba(0,0,0,0.9);
+  z-index: 25;
+}
+.plate-rivet-corner.c-tl { top: 6px; left: 6px; }
+.plate-rivet-corner.c-tr { top: 6px; right: 6px; }
+.plate-rivet-corner.c-bl { bottom: 6px; left: 6px; }
+.plate-rivet-corner.c-br { bottom: 6px; right: 6px; }
+.plate-rivet-corner::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 1px;
+  width: 8px;
+  height: 1.5px;
+  background-color: #110204;
+}
+
+/* Deep physical slot/socket input */
+.tactile-slot-input {
+  font-family: "Space Mono", monospace !important;
+  background-color: #0b0204 !important;
+  background-image: linear-gradient(to bottom, #000 0%, #150508 100%) !important;
+  color: #ffa426 !important;
+  border: 3px solid #632d20 !important;
+  box-shadow: 
+    inset 0 4px 12px rgba(0,0,0,1),
+    inset 0 -1px 3px rgba(255,255,255,0.05),
+    0 1px 2px rgba(255,164,38,0.1) !important;
+  border-radius: 6px !important;
+  padding: 12px 14px !important;
+  font-size: 0.85rem !important;
+  letter-spacing: 0.05em !important;
+}
+
+.tactile-slot-input:focus {
+  border-color: #ffa426 !important;
+  color: #ffca4d !important;
+  box-shadow: 
+    inset 0 4px 12px rgba(0,0,0,1),
+    0px 0px 12px rgba(255, 164, 38, 0.45) !important;
+  outline: none !important;
+}
+
+/* Tactile 3D physical selection list menu */
+.tactile-select {
+  font-family: "Space Mono", monospace !important;
+  background-color: #170707 !important;
+  background-image: linear-gradient(to bottom, #220909 0%, #0d0102 100%) !important;
+  color: #ffd84d !important;
+  border: 3px solid #5a191c !important;
+  box-shadow: 
+    inset 0 3px 6px rgba(0,0,0,0.9),
+    0 4px 10px rgba(0,0,0,0.6) !important;
+  border-radius: 6px !important;
+  padding: 12px !important;
+  font-size: 0.82rem !important;
+  cursor: pointer !important;
+}
+
+.tactile-select:focus {
+  border-color: #ffd84d !important;
+  box-shadow: 
+    inset 0 3px 6px rgba(0,0,0,0.9),
+    0 0 10px rgba(255, 216, 77, 0.35) !important;
+  outline: none !important;
+}
+
+/* Massive glowing physical circular or pill-shaped switch button */
+.tactile-heavy-lever {
+  font-family: "Sancreek", "Pirata One", cursive !important;
+  font-weight: bold !important;
+  letter-spacing: 0.08em !important;
+  color: #fff2cc !important;
+  background: linear-gradient(135deg, #a82626 0%, #4a0307 100%) !important;
+  border: 4px solid #1c0305 !important;
+  border-radius: 12px !important;
+  text-shadow: 2px 2px 0px #3c0205 !important;
+  box-shadow: 
+    0px 8px 0px #300205, 
+    0px 12px 24px rgba(0,0,0,0.9),
+    inset 0 3px 0px rgba(255,255,255,0.2) !important;
+  transition: all 0.08s ease-out !important;
+  cursor: pointer !important;
+}
+
+.tactile-heavy-lever:hover {
+  background: linear-gradient(135deg, #cc2e2e 0%, #61040a 100%) !important;
+  border-color: #ffd84d !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 
+    0px 10px 0px #300205, 
+    0px 14px 28px rgba(0,0,0,0.95),
+    inset 0 3px 0px rgba(255,255,255,0.3) !important;
+}
+
+.tactile-heavy-lever:active {
+  transform: translateY(6px) !important;
+  box-shadow: 
+    0px 2px 0px #300205, 
+    0px 4px 8px rgba(0,0,0,0.9),
+    inset 0 -2px 5px rgba(0,0,0,0.4) !important;
+}
+
+/* Hand-painted gold header accents */
+.hand-painted-banner-header {
+  border-top: 1.5px solid rgba(209, 156, 56, 0.5);
+  border-bottom: 1.5px solid rgba(209, 156, 56, 0.5);
+  padding: 0.22rem 1rem;
+  background-color: transparent;
+  display: inline-block;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse-fast {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes scan-up-down {
+  0%, 100% { top: 0%; }
+  50% { top: 90%; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
